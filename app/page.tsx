@@ -1,6 +1,11 @@
+"use client";
+
 import LenisProvider from "@/components/LenisProvider";
-import Background3D from "@/components/Background3D";
 import { Code, Mail, Briefcase, ExternalLink } from "lucide-react";
+import { Canvas } from "@react-three/fiber";
+import { Float, OrbitControls } from "@react-three/drei";
+import F1car from '../components/F1car';
+import Background3D from "@/components/Background3D";
 
 export default function Home() {
   return (
@@ -8,8 +13,20 @@ export default function Home() {
       <main className="relative bg-transparent text-white w-full overflow-hidden font-sans">
         <Background3D />
         
+        <div style={{ position: 'fixed', inset: 0, zIndex: 5, pointerEvents: 'none' }}>
+          <Canvas shadows camera={{ position: [0, 0, 5], fov: 50 }}>
+            <ambientLight intensity={0.5} />
+            <directionalLight position={[10, 10, 5]} intensity={1} />
+            <Float speed={2} rotationIntensity={1} floatIntensity={2}>
+              {/* @ts-ignore */}
+              <F1car scale={[1, 1, 1] as [number, number, number]} />
+            </Float>
+            <OrbitControls makeDefault />
+          </Canvas>
+        </div>
+        
         {/* Scrollable Content Overlay */}
-        <div className="relative z-10 w-full">
+        <div style={{ position: 'relative', zIndex: 10 }}>
           {/* Section 1: Hero */}
           <section className="min-h-screen flex flex-col items-center justify-center p-8 lg:p-24">
             <div className="max-w-5xl w-full text-center space-y-6">

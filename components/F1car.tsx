@@ -9,10 +9,11 @@ Title: 2011 Redbull RB7
 */
 
 import React from 'react'
+import { GroupProps } from '@react-three/fiber'
 import { useGLTF } from '@react-three/drei'
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/f1car-transformed.glb')
+export default function F1car(props: GroupProps) {
+  const { nodes, materials } = useGLTF('/models/f1car-transformed.glb')
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.Object_8.geometry} material={materials.mirrors} scale={0.01} />
@@ -39,4 +40,4 @@ export function Model(props) {
   )
 }
 
-useGLTF.preload('/f1car-transformed.glb')
+useGLTF.preload('/models/f1car-transformed.glb')

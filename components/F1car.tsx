@@ -9,13 +9,14 @@ Title: 2011 Redbull RB7
 */
 
 import React from 'react'
-import { GroupProps } from '@react-three/fiber'
-import { useGLTF } from '@react-three/drei'
+import { useGLTF, Center } from '@react-three/drei'
 
-export default function F1car(props: GroupProps) {
-  const { nodes, materials } = useGLTF('/models/f1car-transformed.glb')
+export default function F1car(props: any) {
+  console.log('F1car component rendering');
+  const { nodes, materials } = useGLTF('/models/f1car-transformed.glb') as any
   return (
-    <group {...props} dispose={null}>
+    <Center>
+      <group {...props} dispose={null}>
       <mesh geometry={nodes.Object_8.geometry} material={materials.mirrors} scale={0.01} />
       <mesh geometry={nodes.Object_12.geometry} material={materials.rb_rims} scale={0.01} />
       <mesh geometry={nodes.Object_15.geometry} material={materials.BRAKE} scale={0.01} />
@@ -36,7 +37,8 @@ export default function F1car(props: GroupProps) {
       <mesh geometry={nodes.Object_162.geometry} material={materials.cockpit} scale={0.01} />
       <mesh geometry={nodes.Object_165.geometry} material={materials.cockpit_cf} scale={0.01} />
       <mesh geometry={nodes.Object_178.geometry} material={materials.glass} scale={0.01} />
-    </group>
+      </group>
+    </Center>
   )
 }
 

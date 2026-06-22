@@ -60,7 +60,7 @@ function Particles() {
   return (
     <instancedMesh ref={mesh} args={[undefined, undefined, count]}>
       <dodecahedronGeometry args={[0.2, 0]} />
-      <meshBasicMaterial color="#ffffff" transparent opacity={0.3} />
+      <meshBasicMaterial color="#ffffff" transparent opacity={0.8} />
     </instancedMesh>
   );
 }

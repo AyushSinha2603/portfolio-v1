@@ -395,7 +395,7 @@ export default function Home() {
                     <a href="https://github.com/AyushSinha2603" target="_blank" rel="noopener noreferrer" className="text-3xl md:text-5xl font-black uppercase tracking-tight hover:text-purple-400 transition-colors drop-shadow-md">GitHub</a>
                     <a href="https://linkedin.com/in/ayush-sinha-70046a319/" target="_blank" rel="noopener noreferrer" className="text-3xl md:text-5xl font-black uppercase tracking-tight hover:text-purple-400 transition-colors drop-shadow-md">LinkedIn</a>
                   </div>
-                  <div className="text-right">
+                  <div className="text-center sm:text-right">
                     <p className="text-2xl text-neutral-300 uppercase tracking-widest font-black">Open to Opportunities</p>
                     <p className="text-sm text-neutral-500 font-mono mt-4 uppercase tracking-[0.2em]">© {new Date().getFullYear()} Ayush Sinha. Built with Next.js.</p>
                   </div>

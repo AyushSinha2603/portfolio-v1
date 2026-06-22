@@ -78,7 +78,7 @@ export default function Home() {
           </section>
 
           {/* Section 1.5: About Me */}
-          <section className="py-24 flex items-center justify-center py-24 px-6 md:p-4 lg:p-12 xl:p-24 relative z-10">
+          <section className="flex items-center justify-center pt-8 pb-24 px-6 md:p-4 md:py-24 lg:p-12 xl:p-24 relative z-10">
             <motion.div 
               initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer}
               className="max-w-7xl w-full relative z-10 mx-auto"

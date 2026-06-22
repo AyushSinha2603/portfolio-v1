@@ -78,7 +78,7 @@ export default function Home() {
           </section>
 
           {/* Section 1.5: About Me */}
-          <section className="py-24 flex items-center justify-center p-4 lg:p-12 xl:p-24 relative z-10">
+          <section className="py-24 flex items-center justify-center py-24 px-6 md:p-4 lg:p-12 xl:p-24 relative z-10">
             <motion.div 
               initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer}
               className="max-w-7xl w-full relative z-10 mx-auto"
@@ -106,12 +106,12 @@ export default function Home() {
           </section>
 
           {/* Section 2: Dashboard */}
-          <section className="min-h-[70vh] flex items-center justify-center p-4 lg:p-12 xl:p-24 relative">
+          <section className="min-h-[70vh] flex items-center justify-center py-24 px-6 md:p-4 lg:p-12 xl:p-24 relative">
             <motion.div 
               initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer}
               className="max-w-7xl w-full relative z-10 mx-auto"
             >
-              <motion.h2 variants={fadeUp} className="text-5xl md:text-8xl font-black uppercase tracking-tighter mb-16 text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-800 drop-shadow-2xl">
+              <motion.h2 variants={fadeUp} className="text-5xl md:text-8xl font-black uppercase tracking-tighter mb-16 text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-400 md:to-neutral-800 drop-shadow-2xl">
                 Tech Stack
               </motion.h2>
 
@@ -178,9 +178,9 @@ export default function Home() {
           </section>
 
           {/* Section: Open Source Contributions */}
-          <section className="min-h-[70vh] flex items-center justify-center p-4 lg:p-12 xl:p-24 relative">
+          <section className="min-h-[70vh] flex items-center justify-center py-24 px-6 md:p-4 lg:p-12 xl:p-24 relative">
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer} className="max-w-7xl w-full">
-              <motion.h2 variants={fadeUp} className="text-5xl md:text-8xl font-black uppercase tracking-tighter mb-16 text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-800 drop-shadow-2xl text-right">
+              <motion.h2 variants={fadeUp} className="text-5xl md:text-8xl font-black uppercase tracking-tighter mb-16 text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-400 md:to-neutral-800 drop-shadow-2xl text-right">
                 Open Source
               </motion.h2>
 
@@ -227,12 +227,12 @@ export default function Home() {
           </section>
 
           {/* Section 3: Featured Projects (6 Items) */}
-          <section className="min-h-screen flex items-center justify-center p-4 lg:p-12 xl:p-24 relative">
+          <section className="min-h-screen flex items-center justify-center py-24 px-6 md:p-4 lg:p-12 xl:p-24 relative">
             <motion.div 
               initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer}
               className="max-w-7xl w-full"
             >
-              <motion.h2 variants={fadeUp} className="text-5xl md:text-8xl font-black uppercase tracking-tighter mb-16 text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-800 drop-shadow-2xl">
+              <motion.h2 variants={fadeUp} className="text-5xl md:text-8xl font-black uppercase tracking-tighter mb-16 text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-400 md:to-neutral-800 drop-shadow-2xl">
                 Projects
               </motion.h2>
 

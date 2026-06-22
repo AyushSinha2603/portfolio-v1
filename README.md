@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌌 Ayush Sinha - Developer Portfolio
 
-## Getting Started
+A highly interactive, 3D-powered personal portfolio designed to showcase complex backend architectures, scalable open-source solutions, and pixel-perfect Next.js frontends.
 
-First, run the development server:
+## 🔮 The Aesthetic
+The portfolio is built around a premium **Synthwave / Gaming Purple** aesthetic. It relies heavily on immersive glassmorphism, dynamic glowing micro-animations, interactive HUD elements, and a rich, smooth-scrolling 3D background featuring a floating Formula 1 car and luminous particles.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 💻 Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Framework:** Next.js (App Router)
+- **Styling:** Tailwind CSS (Custom violet/fuchsia/purple glow palette)
+- **Animations:** Framer Motion
+- **Smooth Scrolling:** Lenis 
+- **3D Graphics:** Three.js / React Three Fiber / Drei
+- **Icons:** Lucide React
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎯 Key Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Immersive 3D Hero:** A dark-mode hero section featuring a beautifully rendered, interactive 3D Formula 1 car model set against floating light particles.
+- **Tech Stack Dashboard:** A sleek, glassmorphic HUD that categorizes Languages, Backend infrastructure, and Frontend tools with highly satisfying, isolated neon-glow hover states.
+- **Open Source & Projects:** Beautifully designed cards highlighting major contributions (like `lichess-org/chess-openings`) and featured full-stack AI projects (MailSense AI, Opening Forge, Cineverse, etc.).
+- **Integrated Resume Modal:** A clean, native-feeling modal that perfectly fits an A4 PDF viewer into the viewport without breaking the site's dark-mode immersion.
 
-## Learn More
+## ⚙️ Running Locally
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/portfolio.git
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 👨‍💻 About Me
+I am a software engineer from the **NIT Rourkela '27** batch, focused on building scalable backend systems and high-performance web applications. My work centers heavily around Java, Spring Boot, Python, and Next.js. Outside of the code editor, I am an avid Formula 1 fan, a photography enthusiast, and a passionate chess player.

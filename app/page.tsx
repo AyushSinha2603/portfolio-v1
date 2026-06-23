@@ -105,7 +105,7 @@ export default function Home() {
                     <span className="text-white font-medium">My passion?</span> Crafting clean, efficient architecture that drives modern, lightning-fast web experiences with Next.js.
                   </p>
                   <p className="leading-relaxed text-neutral-300">
-                    Beyond the IDE, I thrive on the strategy of the chessboard, the precision of F1, and the creative perspective of photography.
+                    Beyond the IDE, I thrive on the <span className="text-white font-medium">strategy of the chessboard</span>, the <span className="text-white font-medium">precision of F1</span>, and the <span className="text-white font-medium">creative perspective of photography.</span>
                   </p>
                 </motion.div>
               </div>
@@ -182,57 +182,6 @@ export default function Home() {
                     ))}
                   </div>
                 </motion.div>
-              </div>
-            </motion.div>
-          </section>
-</MorphSection>
-
-          {/* Section: Open Source Contributions */}
-          <MorphSection>
-<section className="min-h-[70vh] flex items-center justify-center py-24 px-6 md:p-4 lg:p-12 xl:p-24 relative">
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer} className="max-w-7xl w-full">
-              <motion.h2 variants={fadeUp} className="text-5xl md:text-8xl font-black uppercase tracking-tighter mb-16 text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-400 md:to-neutral-800 drop-shadow-2xl text-right">
-                Open Source
-              </motion.h2>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                
-                {/* Lichess */}
-                <motion.div variants={fadeUp} className="p-8 lg:p-12 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-purple-500/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(192,132,252,0.6)] hover:rotate-1 z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[400px]">
-                  <div className="absolute bottom-0 left-0 w-96 h-96 bg-fuchsia-500/30 rounded-full blur-3xl -ml-20 -mb-20 transition-transform group-hover:scale-150"></div>
-                  <div className="relative z-10">
-                    <div className="flex justify-between items-start mb-8">
-                      <div className="p-4 bg-white/5 border border-white/10 rounded-2xl group-hover:border-purple-500/50 transition-colors"><GitMerge className="text-purple-400 w-8 h-8" /></div>
-                      <span className="text-xs font-black uppercase tracking-widest bg-purple-500/40 text-purple-400 px-4 py-2 rounded-full border border-purple-500/20">Merged PR</span>
-                    </div>
-                    <h3 className="text-3xl font-black mb-4 uppercase tracking-tight">lichess-org / chess-openings</h3>
-                    <p className="text-neutral-400 text-lg leading-relaxed font-light">
-                      Improved opening classification and transposition mapping for Lichess, one of the largest open-source chess platforms.
-                    </p>
-                  </div>
-                  <a href="https://github.com/lichess-org/chess-openings" target="_blank" rel="noopener noreferrer" className="relative z-10 mt-12 inline-flex items-center text-sm font-black uppercase tracking-[0.2em] text-white hover:text-purple-400 transition-colors w-max">
-                    View Impact <ExternalLink className="w-5 h-5 ml-3" />
-                  </a>
-                </motion.div>
-
-                {/* Rosen Score */}
-                <motion.div variants={fadeUp} className="p-8 lg:p-12 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-purple-500/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(192,132,252,0.6)] hover:rotate-1 z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[400px]">
-                  <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500/30 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
-                  <div className="relative z-10">
-                    <div className="flex justify-between items-start mb-8">
-                      <div className="p-4 bg-white/5 border border-white/10 rounded-2xl group-hover:border-purple-500/50 transition-colors"><GitMerge className="text-neutral-400 w-8 h-8" /></div>
-                      <span className="text-xs font-black uppercase tracking-widest bg-neutral-500/20 text-neutral-300 px-4 py-2 rounded-full border border-neutral-500/20">Pending PR</span>
-                    </div>
-                    <h3 className="text-3xl font-black mb-4 uppercase tracking-tight">fitztrev / rosen-score</h3>
-                    <p className="text-neutral-400 text-lg leading-relaxed font-light">
-                      Engineered concurrent API request handling for cross-platform Lichess/Chess.com data fetching.
-                    </p>
-                  </div>
-                  <a href="https://github.com/fitztrev/rosen-score/pull/12" target="_blank" rel="noopener noreferrer" className="relative z-10 mt-12 inline-flex items-center text-sm font-black uppercase tracking-[0.2em] text-white hover:text-purple-400 transition-colors w-max">
-                    View PR <ExternalLink className="w-5 h-5 ml-3" />
-                  </a>
-                </motion.div>
-
               </div>
             </motion.div>
           </section>
@@ -362,6 +311,57 @@ export default function Home() {
                   </div>
                   <a href="https://github.com/AyushSinha2603/Odd-Even-Policy" target="_blank" rel="noopener noreferrer" className="relative z-10 inline-flex items-center justify-center w-full px-8 py-4 bg-white text-black font-black uppercase tracking-[0.2em] text-xs rounded-full hover:bg-purple-400 transition-colors shadow-[0_0_30px_rgba(255,255,255,0.1)] hover:shadow-[0_0_40px_rgba(,,,0.5)] mt-auto">
                     View Source <Code className="w-4 h-4 ml-3" />
+                  </a>
+                </motion.div>
+
+              </div>
+            </motion.div>
+          </section>
+</MorphSection>
+
+          {/* Section: Open Source Contributions */}
+          <MorphSection>
+<section className="min-h-[70vh] flex items-center justify-center py-24 px-6 md:p-4 lg:p-12 xl:p-24 relative">
+            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer} className="max-w-7xl w-full">
+              <motion.h2 variants={fadeUp} className="text-5xl md:text-8xl font-black uppercase tracking-tighter mb-16 text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-400 md:to-neutral-800 drop-shadow-2xl text-right">
+                Open Source
+              </motion.h2>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                {/* Lichess */}
+                <motion.div variants={fadeUp} className="p-8 lg:p-12 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-purple-500/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(192,132,252,0.6)] hover:rotate-1 z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[400px]">
+                  <div className="absolute bottom-0 left-0 w-96 h-96 bg-fuchsia-500/30 rounded-full blur-3xl -ml-20 -mb-20 transition-transform group-hover:scale-150"></div>
+                  <div className="relative z-10">
+                    <div className="flex justify-between items-start mb-8">
+                      <div className="p-4 bg-white/5 border border-white/10 rounded-2xl group-hover:border-purple-500/50 transition-colors"><GitMerge className="text-purple-400 w-8 h-8" /></div>
+                      <span className="text-xs font-black uppercase tracking-widest bg-purple-500/40 text-purple-400 px-4 py-2 rounded-full border border-purple-500/20">Merged PR</span>
+                    </div>
+                    <h3 className="text-3xl font-black mb-4 uppercase tracking-tight">lichess-org / chess-openings</h3>
+                    <p className="text-neutral-400 text-lg leading-relaxed font-light">
+                      Improved opening classification and transposition mapping for Lichess, one of the largest open-source chess platforms.
+                    </p>
+                  </div>
+                  <a href="https://github.com/lichess-org/chess-openings" target="_blank" rel="noopener noreferrer" className="relative z-10 mt-12 inline-flex items-center text-sm font-black uppercase tracking-[0.2em] text-white hover:text-purple-400 transition-colors w-max">
+                    View Impact <ExternalLink className="w-5 h-5 ml-3" />
+                  </a>
+                </motion.div>
+
+                {/* Rosen Score */}
+                <motion.div variants={fadeUp} className="p-8 lg:p-12 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-purple-500/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(192,132,252,0.6)] hover:rotate-1 z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[400px]">
+                  <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500/30 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
+                  <div className="relative z-10">
+                    <div className="flex justify-between items-start mb-8">
+                      <div className="p-4 bg-white/5 border border-white/10 rounded-2xl group-hover:border-purple-500/50 transition-colors"><GitMerge className="text-neutral-400 w-8 h-8" /></div>
+                      <span className="text-xs font-black uppercase tracking-widest bg-neutral-500/20 text-neutral-300 px-4 py-2 rounded-full border border-neutral-500/20">Pending PR</span>
+                    </div>
+                    <h3 className="text-3xl font-black mb-4 uppercase tracking-tight">fitztrev / rosen-score</h3>
+                    <p className="text-neutral-400 text-lg leading-relaxed font-light">
+                      Engineered concurrent API request handling for cross-platform Lichess/Chess.com data fetching.
+                    </p>
+                  </div>
+                  <a href="https://github.com/fitztrev/rosen-score/pull/12" target="_blank" rel="noopener noreferrer" className="relative z-10 mt-12 inline-flex items-center text-sm font-black uppercase tracking-[0.2em] text-white hover:text-purple-400 transition-colors w-max">
+                    View PR <ExternalLink className="w-5 h-5 ml-3" />
                   </a>
                 </motion.div>
 

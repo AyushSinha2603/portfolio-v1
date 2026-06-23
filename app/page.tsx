@@ -62,7 +62,7 @@ export default function Home() {
           
           {/* Section 1: Hero */}
           <MorphSection>
-<section className="min-h-screen flex flex-col items-center justify-center p-8 lg:p-24 relative">
+<section className="min-h-[85vh] md:min-h-screen flex flex-col items-center justify-center p-8 pb-0 md:pb-8 lg:p-24 relative">
             <motion.div 
               initial="hidden" animate="visible" variants={staggerContainer}
               className="max-w-5xl w-full text-center space-y-6 mix-blend-difference"
@@ -82,7 +82,7 @@ export default function Home() {
 
           {/* Section 1.5: About Me */}
           <MorphSection>
-<section className="flex items-center justify-center pt-8 pb-24 px-6 md:p-4 md:py-24 lg:p-12 xl:p-24 relative z-10">
+<section className="flex items-center justify-center pt-4 pb-24 px-6 md:p-4 md:py-24 lg:p-12 xl:p-24 relative z-10 -mt-12 md:mt-0">
             <motion.div 
               initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer}
               className="max-w-7xl w-full relative z-10 mx-auto"

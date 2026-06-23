@@ -1,6 +1,7 @@
 "use client";
 
 import LenisProvider from "@/components/LenisProvider";
+import MorphSection from '@/components/MorphSection';
 import { Code, Mail, Briefcase, ExternalLink, Activity, Database, Layout, Server, GitMerge, ChevronDown, Rocket, Map, Users, Crown, Gamepad2, X, Download } from "lucide-react";
 import { Canvas } from "@react-three/fiber";
 import { Stage, OrbitControls } from "@react-three/drei";
@@ -60,7 +61,8 @@ export default function Home() {
         <div style={{ position: 'relative', zIndex: 10 }}>
           
           {/* Section 1: Hero */}
-          <section className="min-h-screen flex flex-col items-center justify-center p-8 lg:p-24 relative">
+          <MorphSection>
+<section className="min-h-screen flex flex-col items-center justify-center p-8 lg:p-24 relative">
             <motion.div 
               initial="hidden" animate="visible" variants={staggerContainer}
               className="max-w-5xl w-full text-center space-y-6 mix-blend-difference"
@@ -76,9 +78,11 @@ export default function Home() {
               </motion.div>
             </motion.div>
           </section>
+</MorphSection>
 
           {/* Section 1.5: About Me */}
-          <section className="flex items-center justify-center pt-8 pb-24 px-6 md:p-4 md:py-24 lg:p-12 xl:p-24 relative z-10">
+          <MorphSection>
+<section className="flex items-center justify-center pt-8 pb-24 px-6 md:p-4 md:py-24 lg:p-12 xl:p-24 relative z-10">
             <motion.div 
               initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer}
               className="max-w-7xl w-full relative z-10 mx-auto"
@@ -104,9 +108,11 @@ export default function Home() {
               </div>
             </motion.div>
           </section>
+</MorphSection>
 
           {/* Section 2: Dashboard */}
-          <section className="min-h-[70vh] flex items-center justify-center py-24 px-6 md:p-4 lg:p-12 xl:p-24 relative">
+          <MorphSection>
+<section className="min-h-[70vh] flex items-center justify-center py-24 px-6 md:p-4 lg:p-12 xl:p-24 relative">
             <motion.div 
               initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer}
               className="max-w-7xl w-full relative z-10 mx-auto"
@@ -176,9 +182,11 @@ export default function Home() {
               </div>
             </motion.div>
           </section>
+</MorphSection>
 
           {/* Section: Open Source Contributions */}
-          <section className="min-h-[70vh] flex items-center justify-center py-24 px-6 md:p-4 lg:p-12 xl:p-24 relative">
+          <MorphSection>
+<section className="min-h-[70vh] flex items-center justify-center py-24 px-6 md:p-4 lg:p-12 xl:p-24 relative">
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer} className="max-w-7xl w-full">
               <motion.h2 variants={fadeUp} className="text-5xl md:text-8xl font-black uppercase tracking-tighter mb-16 text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-400 md:to-neutral-800 drop-shadow-2xl text-right">
                 Open Source
@@ -225,9 +233,11 @@ export default function Home() {
               </div>
             </motion.div>
           </section>
+</MorphSection>
 
           {/* Section 3: Featured Projects (6 Items) */}
-          <section className="min-h-screen flex items-center justify-center py-24 px-6 md:p-4 lg:p-12 xl:p-24 relative">
+          <MorphSection>
+<section className="min-h-screen flex items-center justify-center py-24 px-6 md:p-4 lg:p-12 xl:p-24 relative">
             <motion.div 
               initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer}
               className="max-w-7xl w-full"
@@ -355,9 +365,11 @@ export default function Home() {
               </div>
             </motion.div>
           </section>
+</MorphSection>
 
           {/* Section: Resume */}
-          <section className="py-24 flex items-center justify-center relative">
+          <MorphSection>
+<section className="py-24 flex items-center justify-center relative">
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer} className="flex flex-col items-center text-center">
               <h2 className="text-xl md:text-2xl font-bold uppercase tracking-[0.3em] text-neutral-500 mb-8">
                 Want the full picture?
@@ -367,9 +379,11 @@ export default function Home() {
               </button>
             </motion.div>
           </section>
+</MorphSection>
 
           {/* Section 4: Massive Animated Footer */}
-          <section className="relative flex flex-col justify-center bg-transparent py-32">
+          <MorphSection>
+<section className="relative flex flex-col justify-center bg-transparent py-32">
             <div className="max-w-7xl mx-auto w-full px-8 lg:px-24 relative z-10 flex flex-col items-center text-center">
               <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer} className="space-y-12">
                 <motion.h2 variants={fadeUp} className="text-6xl md:text-8xl lg:text-[10rem] font-black uppercase tracking-tighter leading-none drop-shadow-2xl">
@@ -403,6 +417,7 @@ export default function Home() {
               </motion.div>
             </div>
           </section>
+</MorphSection>
         </div>
 
         {/* Contact Form Modal */}

@@ -94,7 +94,7 @@ export default function Home() {
                     <img src="/image/profilepic.jpeg" alt="Ayush Sinha" className="w-full h-full object-cover transition-all duration-700 hover:scale-105" />
                   </div>
                 </motion.div>
-                <motion.div variants={fadeUp} className="space-y-8 text-lg md:text-xl text-neutral-400 font-light leading-relaxed tracking-wide p-8 md:p-12 rounded-[3rem] border border-white/5 bg-black/40 backdrop-blur-3xl shadow-[0_0_40px_rgba(0,0,0,1)]">
+                <motion.div variants={fadeUp} className="space-y-8 text-lg md:text-xl text-neutral-400 font-light leading-relaxed tracking-wide p-8 md:p-12 rounded-[3rem] border border-white/5 bg-black/40 backdrop-blur-3xl shadow-[0_0_40px_rgba(0,0,0,1)] hover:border-purple-500/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(192,132,252,0.6)] hover:rotate-1 z-10 hover:z-50 group">
                   <p className="text-2xl md:text-3xl font-black text-white uppercase tracking-tight leading-snug">
                     Software Engineer.<br/>
                     <span className="text-neutral-400 font-light text-xl md:text-2xl tracking-widest">NIT Rourkela '27.</span>

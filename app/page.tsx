@@ -62,7 +62,7 @@ export default function Home() {
           
           {/* Section 1: Hero */}
           <MorphSection>
-<section className="min-h-[70vh] md:min-h-screen flex flex-col items-center justify-center p-8 pb-0 md:pb-8 lg:p-24 relative">
+<section className="min-h-[90vh] md:min-h-screen flex flex-col items-center justify-center p-8 pb-0 md:pb-8 lg:p-24 relative">
             <motion.div 
               initial="hidden" animate="visible" variants={staggerContainer}
               className="max-w-5xl w-full text-center space-y-6 mix-blend-difference"
@@ -90,7 +90,7 @@ export default function Home() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <motion.div variants={fadeUp} className="relative flex justify-center lg:justify-end">
                   <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 md:w-[28rem] md:h-[28rem] bg-purple-500/40 blur-3xl rounded-full z-0 opacity-60"></div>
-                  <div className="relative z-10 w-64 h-64 md:w-96 md:h-96 shrink-0 rounded-full overflow-hidden border-4 border-white/10 shadow-[0_0_80px_rgba(192,132,252,0.7)]">
+                  <div className="relative z-10 w-64 h-64 md:w-96 md:h-96 shrink-0 rounded-full overflow-hidden border-4 border-white/10 shadow-[0_0_40px_rgba(192,132,252,0.3)]">
                     <img src="/image/profilepic.jpeg" alt="Ayush Sinha" className="w-full h-full object-cover transition-all duration-700 hover:scale-105" />
                   </div>
                 </motion.div>

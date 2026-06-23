@@ -95,14 +95,17 @@ export default function Home() {
                   </div>
                 </motion.div>
                 <motion.div variants={fadeUp} className="space-y-8 text-lg md:text-xl text-neutral-400 font-light leading-relaxed tracking-wide p-8 md:p-12 rounded-[3rem] border border-white/5 bg-black/40 backdrop-blur-3xl shadow-[0_0_40px_rgba(0,0,0,1)]">
-                  <p>
-                    I am a software engineer from the <strong className="text-white font-bold">NIT Rourkela '27</strong> batch, focused on building scalable backend systems and high-performance web applications.
+                  <p className="text-2xl md:text-3xl font-black text-white uppercase tracking-tight leading-snug">
+                    Software Engineer.<br/>
+                    <span className="text-neutral-400 font-light text-xl md:text-2xl tracking-widest">NIT Rourkela '27.</span>
                   </p>
-                  <p>
-                    My work centers on Java, Spring Boot, and modern frontend frameworks like Next.js, with a <strong className="text-white font-bold tracking-widest uppercase text-sm">passion for designing clean, efficient software architectures.</strong>
+                  <p className="leading-relaxed text-neutral-300">
+                    I don’t just build applications; I <span className="text-white font-medium">engineer them for scale.</span><br/><br/>
+                    <span className="text-white font-medium">My focus?</span> Constructing high-performance backend systems with Java and Spring Boot.<br/><br/>
+                    <span className="text-white font-medium">My passion?</span> Crafting clean, efficient architecture that drives modern, lightning-fast web experiences with Next.js.
                   </p>
-                  <p>
-                    Outside of development, I am an avid Formula 1 fan, a photography enthusiast, and I enjoy a good game of chess.
+                  <p className="leading-relaxed text-neutral-300">
+                    Beyond the IDE, I thrive on the strategy of the chessboard, the precision of F1, and the creative perspective of photography.
                   </p>
                 </motion.div>
               </div>
@@ -390,15 +393,11 @@ export default function Home() {
                     </button>
                   </motion.div>
 
-                  <motion.div variants={fadeUp} className="flex flex-col sm:flex-row justify-between items-center gap-8 pt-12 w-full mt-16 border-t border-white/10 pb-8">
+                  <motion.div variants={fadeUp} className="flex flex-col justify-center items-center gap-8 pt-12 w-full mt-16 border-t border-white/10 pb-8">
                     <div className="flex gap-8 items-center flex-wrap justify-center">
                       <a href="https://github.com/AyushSinha2603" target="_blank" rel="noopener noreferrer" className="text-xl md:text-2xl font-black uppercase tracking-tight hover:text-purple-400 transition-colors drop-shadow-md">GitHub</a>
                       <a href="https://linkedin.com/in/ayush-sinha-70046a319/" target="_blank" rel="noopener noreferrer" className="text-xl md:text-2xl font-black uppercase tracking-tight hover:text-purple-400 transition-colors drop-shadow-md">LinkedIn</a>
                       <button onClick={() => setIsResumeModalOpen(true)} className="text-xl md:text-2xl font-black uppercase tracking-tight hover:text-purple-400 transition-colors drop-shadow-md cursor-pointer bg-transparent border-none outline-none">Resume</button>
-                    </div>
-                    <div className="text-center sm:text-right">
-                      <p className="text-lg text-neutral-300 uppercase tracking-widest font-black">Open to Opportunities</p>
-                      
                     </div>
                   </motion.div>
                 </motion.div>

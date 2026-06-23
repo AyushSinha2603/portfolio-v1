@@ -8,7 +8,7 @@ import { Stage, OrbitControls } from "@react-three/drei";
 import F1car from '../components/F1car';
 import Background3D from "@/components/Background3D";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ContactForm from "@/components/ContactForm";
 
 const fadeUp: any = {
@@ -24,6 +24,15 @@ const staggerContainer: any = {
 export default function Home() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
+
+  useEffect(() => {
+    // Disable browser's default scroll restoration behavior
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    // Force scroll to top on page load/refresh
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <LenisProvider>
@@ -389,7 +398,7 @@ export default function Home() {
                   <motion.div variants={fadeUp} className="flex justify-center pt-8">
                     <button onClick={() => setIsContactModalOpen(true)} className="group relative flex items-center justify-center px-12 py-6 bg-white text-black font-black uppercase tracking-[0.3em] text-lg rounded-full overflow-hidden hover:scale-105 transition-transform shadow-[0_0_40px_rgba(192,132,252,0.6)] hover:shadow-[0_0_80px_rgba(192,132,252,0.6)] cursor-pointer outline-none border-none">
                       <div className="absolute inset-0 bg-purple-400 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
-                      <span className="relative z-10 flex items-center"><Mail className="w-6 h-6 mr-4" /> Say Hello</span>
+                      <span className="relative z-10 flex items-center"><Mail className="w-6 h-6 mr-4" /> Let's Collaborate</span>
                     </button>
                   </motion.div>
 

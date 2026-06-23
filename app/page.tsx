@@ -124,7 +124,7 @@ export default function Home() {
               {/* Tech Stack (Glassmorphism Cards) */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
                 {/* Languages */}
-                <motion.div variants={fadeUp} className="p-8 lg:p-12 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-purple-500/30 transition-all duration-500 group flex flex-col relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)]">
+                <motion.div variants={fadeUp} className="p-8 lg:p-12 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-purple-500/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(192,132,252,0.6)] hover:rotate-1 z-10 hover:z-50 group flex flex-col relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)]">
                   <div className="absolute top-0 right-0 w-64 h-64 bg-purple-500/30 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
                   <div className="flex items-center gap-6 mb-10 relative z-10">
                     <div className="p-4 bg-purple-500/30 rounded-2xl group-hover:bg-purple-500/40 transition-colors">
@@ -143,7 +143,7 @@ export default function Home() {
                 </motion.div>
 
                 {/* Backend */}
-                <motion.div variants={fadeUp} className="p-8 lg:p-12 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-fuchsia-500/30 transition-all duration-500 group flex flex-col relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)]">
+                <motion.div variants={fadeUp} className="p-8 lg:p-12 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-fuchsia-500/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(232,121,249,0.6)] hover:rotate-1 z-10 hover:z-50 group flex flex-col relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)]">
                   <div className="absolute top-0 right-0 w-64 h-64 bg-fuchsia-500/30 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
                   <div className="flex items-center gap-6 mb-10 relative z-10">
                     <div className="p-4 bg-fuchsia-500/30 rounded-2xl group-hover:bg-fuchsia-500/20 transition-colors">
@@ -162,7 +162,7 @@ export default function Home() {
                 </motion.div>
 
                 {/* Frontend & Tools */}
-                <motion.div variants={fadeUp} className="p-8 lg:p-12 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-violet-500/30 transition-all duration-500 group flex flex-col relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)]">
+                <motion.div variants={fadeUp} className="p-8 lg:p-12 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-violet-500/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(139,92,246,0.6)] hover:rotate-1 z-10 hover:z-50 group flex flex-col relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)]">
                   <div className="absolute top-0 right-0 w-64 h-64 bg-violet-500/30 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
                   <div className="flex items-center gap-6 mb-10 relative z-10">
                     <div className="p-4 bg-violet-500/30 rounded-2xl group-hover:bg-violet-500/20 transition-colors">
@@ -195,7 +195,7 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 
                 {/* Lichess */}
-                <motion.div variants={fadeUp} className="p-8 lg:p-12 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-purple-500/30 transition-all duration-500 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[400px]">
+                <motion.div variants={fadeUp} className="p-8 lg:p-12 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-purple-500/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(192,132,252,0.6)] hover:rotate-1 z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[400px]">
                   <div className="absolute bottom-0 left-0 w-96 h-96 bg-fuchsia-500/30 rounded-full blur-3xl -ml-20 -mb-20 transition-transform group-hover:scale-150"></div>
                   <div className="relative z-10">
                     <div className="flex justify-between items-start mb-8">
@@ -213,7 +213,7 @@ export default function Home() {
                 </motion.div>
 
                 {/* Rosen Score */}
-                <motion.div variants={fadeUp} className="p-8 lg:p-12 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-purple-500/30 transition-all duration-500 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[400px]">
+                <motion.div variants={fadeUp} className="p-8 lg:p-12 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-purple-500/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(192,132,252,0.6)] hover:rotate-1 z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[400px]">
                   <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500/30 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
                   <div className="relative z-10">
                     <div className="flex justify-between items-start mb-8">
@@ -249,7 +249,7 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
                 {/* 1. MailSense AI */}
-                <motion.div variants={fadeUp} className="p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-purple-500/30 transition-all duration-500 group overflow-hidden relative shadow-[0_0_40px_rgba(0,0,0,1)] flex flex-col justify-between min-h-[500px]">
+                <motion.div variants={fadeUp} className="p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-purple-500/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(192,132,252,0.6)] hover:rotate-1 z-10 hover:z-50 group overflow-hidden relative shadow-[0_0_40px_rgba(0,0,0,1)] flex flex-col justify-between min-h-[500px]">
                   <Mail className="absolute -right-10 -bottom-10 w-80 h-80 text-white/5 group-hover:text-purple-500/10 transition-colors duration-700" />
                   <div className="relative z-10">
                     <h3 className="text-3xl font-black mb-6 uppercase tracking-tight">MailSense AI</h3>
@@ -268,7 +268,7 @@ export default function Home() {
                 </motion.div>
 
                 {/* 2. Opening Forge */}
-                <motion.div variants={fadeUp} className="p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-purple-500/30 transition-all duration-500 group overflow-hidden relative shadow-[0_0_40px_rgba(0,0,0,1)] flex flex-col justify-between min-h-[500px]">
+                <motion.div variants={fadeUp} className="p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-purple-500/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(192,132,252,0.6)] hover:rotate-1 z-10 hover:z-50 group overflow-hidden relative shadow-[0_0_40px_rgba(0,0,0,1)] flex flex-col justify-between min-h-[500px]">
                   <Crown className="absolute -right-10 -bottom-10 w-80 h-80 text-white/5 group-hover:text-purple-500/10 transition-colors duration-700" />
                   <div className="relative z-10">
                     <h3 className="text-3xl font-black mb-6 uppercase tracking-tight">Opening Forge</h3>
@@ -287,7 +287,7 @@ export default function Home() {
                 </motion.div>
 
                 {/* 3. Sleepyhead Studios */}
-                <motion.div variants={fadeUp} className="p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-purple-500/30 transition-all duration-500 group overflow-hidden relative shadow-[0_0_40px_rgba(0,0,0,1)] flex flex-col justify-between min-h-[500px]">
+                <motion.div variants={fadeUp} className="p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-purple-500/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(192,132,252,0.6)] hover:rotate-1 z-10 hover:z-50 group overflow-hidden relative shadow-[0_0_40px_rgba(0,0,0,1)] flex flex-col justify-between min-h-[500px]">
                   <Gamepad2 className="absolute -right-10 -bottom-10 w-80 h-80 text-white/5 group-hover:text-purple-500/10 transition-colors duration-700" />
                   <div className="relative z-10">
                     <h3 className="text-3xl font-black mb-6 uppercase tracking-tight">Sleepyhead Studios</h3>
@@ -306,7 +306,7 @@ export default function Home() {
                 </motion.div>
 
                 {/* 4. Cineverse */}
-                <motion.div variants={fadeUp} className="p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-purple-500/30 transition-all duration-500 group overflow-hidden relative shadow-[0_0_40px_rgba(0,0,0,1)] flex flex-col justify-between min-h-[500px]">
+                <motion.div variants={fadeUp} className="p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-purple-500/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(192,132,252,0.6)] hover:rotate-1 z-10 hover:z-50 group overflow-hidden relative shadow-[0_0_40px_rgba(0,0,0,1)] flex flex-col justify-between min-h-[500px]">
                   <Layout className="absolute -right-10 -bottom-10 w-80 h-80 text-white/5 group-hover:text-purple-500/10 transition-colors duration-700" />
                   <div className="relative z-10">
                     <h3 className="text-3xl font-black mb-6 uppercase tracking-tight">Cineverse</h3>
@@ -325,7 +325,7 @@ export default function Home() {
                 </motion.div>
 
                 {/* 5. Accident Prediction Model */}
-                <motion.div variants={fadeUp} className="p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-purple-500/30 transition-all duration-500 group overflow-hidden relative shadow-[0_0_40px_rgba(0,0,0,1)] flex flex-col justify-between min-h-[500px]">
+                <motion.div variants={fadeUp} className="p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-purple-500/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(192,132,252,0.6)] hover:rotate-1 z-10 hover:z-50 group overflow-hidden relative shadow-[0_0_40px_rgba(0,0,0,1)] flex flex-col justify-between min-h-[500px]">
                   <Activity className="absolute -right-10 -bottom-10 w-80 h-80 text-white/5 group-hover:text-purple-500/10 transition-colors duration-700" />
                   <div className="relative z-10">
                     <h3 className="text-3xl font-black mb-6 uppercase tracking-tight">Accident Prediction</h3>
@@ -344,7 +344,7 @@ export default function Home() {
                 </motion.div>
 
                 {/* 6. Odd Even Policy Analysis */}
-                <motion.div variants={fadeUp} className="p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-purple-500/30 transition-all duration-500 group overflow-hidden relative shadow-[0_0_40px_rgba(0,0,0,1)] flex flex-col justify-between min-h-[500px]">
+                <motion.div variants={fadeUp} className="p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-purple-500/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(192,132,252,0.6)] hover:rotate-1 z-10 hover:z-50 group overflow-hidden relative shadow-[0_0_40px_rgba(0,0,0,1)] flex flex-col justify-between min-h-[500px]">
                   <Rocket className="absolute -right-10 -bottom-10 w-80 h-80 text-white/5 group-hover:text-purple-500/10 transition-colors duration-700" />
                   <div className="relative z-10">
                     <h3 className="text-3xl font-black mb-6 uppercase tracking-tight">Odd Even Policy</h3>
@@ -367,57 +367,44 @@ export default function Home() {
           </section>
 </MorphSection>
 
-          {/* Section: Resume */}
+          {/* Section 4: Sleek Animated Footer */}
           <MorphSection>
-<section className="py-24 flex items-center justify-center relative">
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer} className="flex flex-col items-center text-center">
-              <h2 className="text-xl md:text-2xl font-bold uppercase tracking-[0.3em] text-neutral-500 mb-8">
-                Want the full picture?
-              </h2>
-              <button onClick={() => setIsResumeModalOpen(true)} className="inline-flex items-center justify-center px-8 py-4 bg-transparent border border-white/20 text-white font-bold uppercase tracking-[0.2em] text-xs rounded-full hover:bg-white hover:text-black transition-all cursor-pointer outline-none">
-                View Resume <Briefcase className="w-4 h-4 ml-3" />
-              </button>
-            </motion.div>
-          </section>
-</MorphSection>
+            <section className="relative flex flex-col justify-center bg-transparent py-16">
+              <div className="max-w-7xl mx-auto w-full px-8 lg:px-24 relative z-10 flex flex-col items-center text-center">
+                <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer} className="space-y-8">
+                  <motion.h2 variants={fadeUp} className="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter leading-none drop-shadow-2xl">
+                    Got an idea? <br/>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-fuchsia-600 drop-shadow-[0_0_40px_rgba(192,132,252,0.6)]">Let's Talk.</span>
+                  </motion.h2>
 
-          {/* Section 4: Massive Animated Footer */}
-          <MorphSection>
-<section className="relative flex flex-col justify-center bg-transparent py-32">
-            <div className="max-w-7xl mx-auto w-full px-8 lg:px-24 relative z-10 flex flex-col items-center text-center">
-              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer} className="space-y-12">
-                <motion.h2 variants={fadeUp} className="text-6xl md:text-8xl lg:text-[10rem] font-black uppercase tracking-tighter leading-none drop-shadow-2xl">
-                  Got an idea? <br/>
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-fuchsia-600 drop-shadow-[0_0_40px_rgba(192,132,252,0.6)]">Let's Talk.</span>
-                </motion.h2>
+                  <motion.div variants={fadeUp} className="max-w-3xl mx-auto">
+                    <p className="text-lg md:text-2xl text-neutral-300 font-light leading-relaxed tracking-wide">
+                      I'm always open to discussing new projects, creative ideas, or opportunities.
+                    </p>
+                  </motion.div>
 
-                <motion.div variants={fadeUp} className="max-w-3xl mx-auto">
-                  <p className="text-2xl md:text-4xl text-neutral-300 font-light leading-relaxed tracking-wide">
-                    I'm always open to discussing new projects, creative ideas, or opportunities.
-                  </p>
+                  <motion.div variants={fadeUp} className="flex justify-center pt-8">
+                    <button onClick={() => setIsContactModalOpen(true)} className="group relative flex items-center justify-center px-12 py-6 bg-white text-black font-black uppercase tracking-[0.3em] text-lg rounded-full overflow-hidden hover:scale-105 transition-transform shadow-[0_0_40px_rgba(192,132,252,0.6)] hover:shadow-[0_0_80px_rgba(192,132,252,0.6)] cursor-pointer outline-none border-none">
+                      <div className="absolute inset-0 bg-purple-400 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
+                      <span className="relative z-10 flex items-center"><Mail className="w-6 h-6 mr-4" /> Say Hello</span>
+                    </button>
+                  </motion.div>
+
+                  <motion.div variants={fadeUp} className="flex flex-col sm:flex-row justify-between items-center gap-8 pt-12 w-full mt-16 border-t border-white/10 pb-8">
+                    <div className="flex gap-8 items-center flex-wrap justify-center">
+                      <a href="https://github.com/AyushSinha2603" target="_blank" rel="noopener noreferrer" className="text-xl md:text-2xl font-black uppercase tracking-tight hover:text-purple-400 transition-colors drop-shadow-md">GitHub</a>
+                      <a href="https://linkedin.com/in/ayush-sinha-70046a319/" target="_blank" rel="noopener noreferrer" className="text-xl md:text-2xl font-black uppercase tracking-tight hover:text-purple-400 transition-colors drop-shadow-md">LinkedIn</a>
+                      <button onClick={() => setIsResumeModalOpen(true)} className="text-xl md:text-2xl font-black uppercase tracking-tight hover:text-purple-400 transition-colors drop-shadow-md cursor-pointer bg-transparent border-none outline-none">Resume</button>
+                    </div>
+                    <div className="text-center sm:text-right">
+                      <p className="text-lg text-neutral-300 uppercase tracking-widest font-black">Open to Opportunities</p>
+                      
+                    </div>
+                  </motion.div>
                 </motion.div>
-
-                <motion.div variants={fadeUp} className="flex justify-center pt-16">
-                  <button onClick={() => setIsContactModalOpen(true)} className="group relative flex items-center justify-center px-16 py-8 bg-white text-black font-black uppercase tracking-[0.3em] text-2xl rounded-[3rem] overflow-hidden hover:scale-105 transition-transform shadow-[0_0_40px_rgba(192,132,252,0.6)] hover:shadow-[0_0_80px_rgba(192,132,252,0.6)] cursor-pointer outline-none border-none">
-                    <div className="absolute inset-0 bg-purple-400 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
-                    <span className="relative z-10 flex items-center"><Mail className="w-8 h-8 mr-6" /> Say Hello</span>
-                  </button>
-                </motion.div>
-
-                <motion.div variants={fadeUp} className="flex flex-col sm:flex-row justify-between items-center gap-8 pt-32 w-full mt-32 border-t border-white/10 pb-8">
-                  <div className="flex gap-12 items-center">
-                    <a href="https://github.com/AyushSinha2603" target="_blank" rel="noopener noreferrer" className="text-3xl md:text-5xl font-black uppercase tracking-tight hover:text-purple-400 transition-colors drop-shadow-md">GitHub</a>
-                    <a href="https://linkedin.com/in/ayush-sinha-70046a319/" target="_blank" rel="noopener noreferrer" className="text-3xl md:text-5xl font-black uppercase tracking-tight hover:text-purple-400 transition-colors drop-shadow-md">LinkedIn</a>
-                  </div>
-                  <div className="text-center sm:text-right">
-                    <p className="text-2xl text-neutral-300 uppercase tracking-widest font-black">Open to Opportunities</p>
-                    <p className="text-sm text-neutral-500 font-mono mt-4 uppercase tracking-[0.2em]">© {new Date().getFullYear()} Ayush Sinha. Built with Next.js.</p>
-                  </div>
-                </motion.div>
-              </motion.div>
-            </div>
-          </section>
-</MorphSection>
+              </div>
+            </section>
+          </MorphSection>
         </div>
 
         {/* Contact Form Modal */}

@@ -412,7 +412,7 @@ export default function Home() {
                 </div>
 
                 <div className="flex justify-end w-full">
-                  <div className="w-full max-w-3xl">
+                  <div className="w-full max-w-xl">
                   {/* Lichess */}
                   <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[300px]">
                     <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>

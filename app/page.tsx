@@ -2,7 +2,7 @@
 
 import LenisProvider from "@/components/LenisProvider";
 import MorphSection from '@/components/MorphSection';
-import { Code, Mail, Briefcase, ExternalLink, Activity, Database, Layout, Server, GitMerge, ChevronDown, Rocket, Map, Users, Crown, Gamepad2, X, Download, Terminal, Box, Layers, Globe, GitBranch, Send, Cpu, Monitor, FileJson } from "lucide-react";
+import { Code, Mail, Briefcase, ExternalLink, Activity, Database, Layout, Server, GitMerge, ChevronDown, Rocket, Map, Users, Crown, Gamepad2, X, Download, Terminal, Box, Layers, Globe, GitBranch, Send, Cpu, Monitor, FileJson, Hash, Network, Triangle, Sparkles, Zap, MoveVertical } from "lucide-react";
 import { Canvas } from "@react-three/fiber";
 import { Stage, OrbitControls } from "@react-three/drei";
 import F1car from '../components/F1car';
@@ -157,12 +157,13 @@ export default function Home() {
                   <div className="flex flex-wrap gap-3 relative z-10 w-full mt-auto">
                     {[
                       { name: 'Java', icon: <Cpu className="w-4 h-4" /> },
-                      { name: 'Python', icon: <Terminal className="w-4 h-4" /> },
-                      { name: 'JavaScript', icon: <Code className="w-4 h-4" /> },
                       { name: 'TypeScript', icon: <FileJson className="w-4 h-4" /> },
+                      { name: 'JavaScript', icon: <Code className="w-4 h-4" /> },
+                      { name: 'Python', icon: <Terminal className="w-4 h-4" /> },
+                      { name: 'C#', icon: <Hash className="w-4 h-4" /> },
                       { name: 'SQL', icon: <Database className="w-4 h-4" /> },
-                      { name: 'HTML', icon: <Layout className="w-4 h-4" /> },
-                      { name: 'CSS', icon: <Layout className="w-4 h-4" /> }
+                      { name: 'HTML5', icon: <Layout className="w-4 h-4" /> },
+                      { name: 'CSS3', icon: <Layout className="w-4 h-4" /> }
                     ].map(t => (
                       <div key={t.name} className="flex items-center gap-2 px-4 py-3 bg-white/5 rounded-2xl text-xs font-bold tracking-widest border border-white/10 uppercase text-neutral-400 hover:border-white/50 hover:text-white hover:bg-white/10 hover:-translate-y-1 hover:shadow-[0_10px_20px_-10px_rgba(255,255,255,0.4)] hover:scale-105 transition-all duration-300 cursor-default group/skill">
                         <span className="text-white/50 group-hover/skill:text-white transition-colors duration-300">{t.icon}</span>
@@ -172,24 +173,27 @@ export default function Home() {
                   </div>
                 </motion.div>
 
-                {/* Backend */}
+                {/* Backend & Infrastructure */}
                 <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)]">
                   <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
                   <div className="flex items-center gap-4 mb-8 relative z-10">
                     <div className="p-3 bg-white/10 rounded-2xl group-hover:bg-white/20 transition-colors shadow-lg">
                       <Server className="w-6 h-6 text-white"/>
                     </div>
-                    <h3 className="text-2xl font-black uppercase tracking-widest text-white">Backend</h3>
+                    <h3 className="text-xl lg:text-2xl font-black uppercase tracking-widest text-white">Backend & Infra</h3>
                   </div>
                   <div className="flex flex-wrap gap-3 relative z-10 w-full mt-auto">
                     {[
                       { name: 'Spring Boot', icon: <Server className="w-4 h-4" /> },
                       { name: 'Node.js', icon: <Box className="w-4 h-4" /> },
                       { name: 'PostgreSQL', icon: <Database className="w-4 h-4" /> },
-                      { name: 'MongoDB', icon: <Database className="w-4 h-4" /> },
-                      { name: 'MySQL', icon: <Database className="w-4 h-4" /> },
-                      { name: 'Redis', icon: <Layers className="w-4 h-4" /> },
-                      { name: 'Appwrite', icon: <Server className="w-4 h-4" /> }
+                      { name: 'REST APIs', icon: <Network className="w-4 h-4" /> },
+                      { name: 'Docker', icon: <Box className="w-4 h-4" /> },
+                      { name: 'Git', icon: <GitBranch className="w-4 h-4" /> },
+                      { name: 'Postman', icon: <Send className="w-4 h-4" /> },
+                      { name: 'Linux', icon: <Terminal className="w-4 h-4" /> },
+                      { name: 'Vercel', icon: <Triangle className="w-4 h-4" /> },
+                      { name: 'Gemini API', icon: <Sparkles className="w-4 h-4" /> }
                     ].map(t => (
                       <div key={t.name} className="flex items-center gap-2 px-4 py-3 bg-white/5 rounded-2xl text-xs font-bold tracking-widest border border-white/10 uppercase text-neutral-400 hover:border-white/50 hover:text-white hover:bg-white/10 hover:-translate-y-1 hover:shadow-[0_10px_20px_-10px_rgba(255,255,255,0.4)] hover:scale-105 transition-all duration-300 cursor-default group/skill">
                         <span className="text-white/50 group-hover/skill:text-white transition-colors duration-300">{t.icon}</span>
@@ -199,24 +203,24 @@ export default function Home() {
                   </div>
                 </motion.div>
 
-                {/* Frontend & Tools */}
+                {/* Frontend & UI */}
                 <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)]">
                   <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
                   <div className="flex items-center gap-4 mb-8 relative z-10">
                     <div className="p-3 bg-white/10 rounded-2xl group-hover:bg-white/20 transition-colors shadow-lg">
                       <Monitor className="w-6 h-6 text-white"/>
                     </div>
-                    <h3 className="text-2xl font-black uppercase tracking-widest text-white">Frontend</h3>
+                    <h3 className="text-xl lg:text-2xl font-black uppercase tracking-widest text-white">Frontend & UI</h3>
                   </div>
                   <div className="flex flex-wrap gap-3 relative z-10 w-full mt-auto">
                     {[
                       { name: 'React', icon: <Code className="w-4 h-4" /> },
                       { name: 'Next.js', icon: <Globe className="w-4 h-4" /> },
-                      { name: 'Tailwind', icon: <Layout className="w-4 h-4" /> },
-                      { name: 'Framer', icon: <Activity className="w-4 h-4" /> },
-                      { name: 'Git', icon: <GitBranch className="w-4 h-4" /> },
-                      { name: 'Docker', icon: <Box className="w-4 h-4" /> },
-                      { name: 'Postman', icon: <Send className="w-4 h-4" /> }
+                      { name: 'Vite', icon: <Zap className="w-4 h-4" /> },
+                      { name: 'Tailwind CSS', icon: <Layout className="w-4 h-4" /> },
+                      { name: 'GSAP', icon: <Activity className="w-4 h-4" /> },
+                      { name: 'Framer Motion', icon: <Activity className="w-4 h-4" /> },
+                      { name: 'Lenis', icon: <MoveVertical className="w-4 h-4" /> }
                     ].map(t => (
                       <div key={t.name} className="flex items-center gap-2 px-4 py-3 bg-white/5 rounded-2xl text-xs font-bold tracking-widest border border-white/10 uppercase text-neutral-400 hover:border-white/50 hover:text-white hover:bg-white/10 hover:-translate-y-1 hover:shadow-[0_10px_20px_-10px_rgba(255,255,255,0.4)] hover:scale-105 transition-all duration-300 cursor-default group/skill">
                         <span className="text-white/50 group-hover/skill:text-white transition-colors duration-300">{t.icon}</span>
@@ -225,10 +229,7 @@ export default function Home() {
                     ))}
                   </div>
                 </motion.div>
-              </div>
-            </motion.div>
-          </section>
-</MorphSection>
+              </div>\n            </motion.div>\n          </section>\n</MorphSection>
 
           {/* Section 3: Featured Projects (6 Items) */}
           <MorphSection>

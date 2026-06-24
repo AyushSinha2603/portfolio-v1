@@ -154,7 +154,7 @@ export default function Home() {
                     </div>
                     <h3 className="text-2xl font-black uppercase tracking-widest text-white">Languages</h3>
                   </div>
-                  <div className="flex flex-wrap gap-3 relative z-10 w-full mt-auto">
+                  <div className="flex flex-wrap gap-3 relative z-10 w-full">
                     {[
                       { name: 'Java', icon: <Cpu className="w-4 h-4" /> },
                       { name: 'TypeScript', icon: <FileJson className="w-4 h-4" /> },
@@ -182,7 +182,7 @@ export default function Home() {
                     </div>
                     <h3 className="text-xl lg:text-2xl font-black uppercase tracking-widest text-white">Backend & Infra</h3>
                   </div>
-                  <div className="flex flex-wrap gap-3 relative z-10 w-full mt-auto">
+                  <div className="flex flex-wrap gap-3 relative z-10 w-full">
                     {[
                       { name: 'Spring Boot', icon: <Server className="w-4 h-4" /> },
                       { name: 'Node.js', icon: <Box className="w-4 h-4" /> },
@@ -212,7 +212,7 @@ export default function Home() {
                     </div>
                     <h3 className="text-xl lg:text-2xl font-black uppercase tracking-widest text-white">Frontend & UI</h3>
                   </div>
-                  <div className="flex flex-wrap gap-3 relative z-10 w-full mt-auto">
+                  <div className="flex flex-wrap gap-3 relative z-10 w-full">
                     {[
                       { name: 'React', icon: <Code className="w-4 h-4" /> },
                       { name: 'Next.js', icon: <Globe className="w-4 h-4" /> },

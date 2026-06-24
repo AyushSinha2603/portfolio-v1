@@ -400,15 +400,14 @@ export default function Home() {
 
           {/* Section 3.5: Open Source */}
           <MorphSection>
-            <section className="min-h-[50vh] flex items-center justify-center p-4 lg:p-12 xl:p-24 relative">
-              <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-white/[0.02] via-transparent to-transparent"></div>
+            <section className="min-h-[50vh] flex flex-col items-center justify-center py-24 px-6 md:p-4 lg:p-12 xl:p-24 relative">
               <motion.div 
                 initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer}
-                className="max-w-7xl w-full space-y-12 z-10"
+                className="max-w-7xl w-full"
               >
                 <div className="flex justify-end w-full">
-                  <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-black tracking-tight uppercase flex items-center gap-4">
-                    Open Source <span className="w-12 h-2 bg-white block"></span>
+                  <motion.h2 variants={fadeUp} className="text-5xl md:text-8xl font-black uppercase tracking-tighter mb-16 text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-400 md:to-neutral-800 drop-shadow-2xl text-right">
+                    Open Source
                   </motion.h2>
                 </div>
 

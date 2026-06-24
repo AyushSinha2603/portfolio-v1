@@ -165,13 +165,13 @@ export default function Home() {
                       { name: 'TypeScript', icon: <SiTypescript className="w-4 h-4" /> },
                       { name: 'JavaScript', icon: <SiJavascript className="w-4 h-4" /> },
                       { name: 'Python', icon: <SiPython className="w-4 h-4" /> },
-                      { name: 'C#', icon: <TbBrandCSharp className="w-4 h-4" /> },
+                      { name: 'C#' },
                       { name: 'SQL', icon: <FaDatabase className="w-4 h-4" /> },
                       { name: 'HTML5', icon: <SiHtml5 className="w-4 h-4" /> },
                       { name: 'CSS3', icon: <SiCss className="w-4 h-4" /> }
                     ].map(t => (
                       <div key={t.name} className="flex items-center gap-2 px-4 py-3 bg-white/5 rounded-2xl text-xs font-bold tracking-widest border border-white/10 uppercase text-neutral-400 hover:border-white/50 hover:text-white hover:bg-white/10 hover:-translate-y-1 hover:shadow-[0_10px_20px_-10px_rgba(255,255,255,0.4)] hover:scale-105 transition-all duration-300 cursor-default group/skill">
-                        <span className="text-white/50 group-hover/skill:text-white transition-colors duration-300">{t.icon}</span>
+                        {t.icon && <span className="text-white/50 group-hover/skill:text-white transition-colors duration-300">{t.icon}</span>}
                         <span>{t.name}</span>
                       </div>
                     ))}
@@ -195,11 +195,10 @@ export default function Home() {
                       { name: 'REST APIs', icon: <FaNetworkWired className="w-4 h-4" /> },
                       { name: 'Git', icon: <SiGit className="w-4 h-4" /> },
                       { name: 'Postman', icon: <SiPostman className="w-4 h-4" /> },
-                      { name: 'Linux', icon: <SiUbuntu className="w-4 h-4" /> },
                       { name: 'Vercel', icon: <SiVercel className="w-4 h-4" /> }
                     ].map(t => (
                       <div key={t.name} className="flex items-center gap-2 px-4 py-3 bg-white/5 rounded-2xl text-xs font-bold tracking-widest border border-white/10 uppercase text-neutral-400 hover:border-white/50 hover:text-white hover:bg-white/10 hover:-translate-y-1 hover:shadow-[0_10px_20px_-10px_rgba(255,255,255,0.4)] hover:scale-105 transition-all duration-300 cursor-default group/skill">
-                        <span className="text-white/50 group-hover/skill:text-white transition-colors duration-300">{t.icon}</span>
+                        {t.icon && <span className="text-white/50 group-hover/skill:text-white transition-colors duration-300">{t.icon}</span>}
                         <span>{t.name}</span>
                       </div>
                     ))}
@@ -226,7 +225,7 @@ export default function Home() {
                       { name: 'Lenis', icon: <TbLayoutAlignTop className="w-4 h-4" /> }
                     ].map(t => (
                       <div key={t.name} className="flex items-center gap-2 px-4 py-3 bg-white/5 rounded-2xl text-xs font-bold tracking-widest border border-white/10 uppercase text-neutral-400 hover:border-white/50 hover:text-white hover:bg-white/10 hover:-translate-y-1 hover:shadow-[0_10px_20px_-10px_rgba(255,255,255,0.4)] hover:scale-105 transition-all duration-300 cursor-default group/skill">
-                        <span className="text-white/50 group-hover/skill:text-white transition-colors duration-300">{t.icon}</span>
+                        {t.icon && <span className="text-white/50 group-hover/skill:text-white transition-colors duration-300">{t.icon}</span>}
                         <span>{t.name}</span>
                       </div>
                     ))}
@@ -234,38 +233,170 @@ export default function Home() {
                 </motion.div>
               </div>\n            </motion.div>\n          </section>\n</MorphSection>
 
-          {/* Section: Open Source Contributions */}
+          {/* Section 3: Projects */}
           <MorphSection>
-<section className="min-h-[70vh] flex items-center justify-center py-24 px-6 md:p-4 lg:p-12 xl:p-24 relative">
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer} className="max-w-7xl w-full">
-              <motion.h2 variants={fadeUp} className="text-5xl md:text-8xl font-black uppercase tracking-tighter mb-16 text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-400 md:to-neutral-800 drop-shadow-2xl text-right">
-                Open Source
-              </motion.h2>
+            <section className="min-h-[70vh] flex flex-col items-center justify-center py-24 px-6 md:p-4 lg:p-12 xl:p-24 relative">
+              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer} className="max-w-7xl w-full">
+                <motion.h2 variants={fadeUp} className="text-5xl md:text-8xl font-black uppercase tracking-tighter mb-16 text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-400 md:to-neutral-800 drop-shadow-2xl">
+                  Projects
+                </motion.h2>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                
-                {/* Lichess */}
-                <motion.div variants={fadeUp} className="md:col-start-2 p-8 lg:p-12 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] hover:rotate-1 z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[400px]">
-                  <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl -ml-20 -mb-20 transition-transform group-hover:scale-150"></div>
-                  <div className="relative z-10">
-                    <div className="flex justify-between items-start mb-8">
-                      <div className="p-4 bg-white/5 border border-white/10 rounded-2xl group-hover:border-white/50 transition-colors"><GitMerge className="text-white w-8 h-8" /></div>
-                      <span className="text-xs font-black uppercase tracking-widest bg-white/20 text-white px-4 py-2 rounded-full border border-white/20">Merged PR</span>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  
+                  {/* MailSense AI */}
+                  <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[400px]">
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
+                    <div className="relative z-10 h-full flex flex-col">
+                      <div>
+                        <div className="flex justify-between items-start mb-8">
+                          <div className="p-4 bg-white/5 border border-white/10 rounded-2xl group-hover:border-white/50 transition-colors"><Server className="text-white w-6 h-6" /></div>
+                          <span className="text-[10px] sm:text-xs font-black uppercase tracking-widest bg-white/20 text-white px-3 py-2 rounded-full border border-white/20 text-center">Backend & AI</span>
+                        </div>
+                        <h3 className="text-2xl font-black mb-4 uppercase tracking-tight text-white">MailSense AI</h3>
+                        <p className="text-neutral-400 text-sm leading-relaxed font-light mb-6">
+                          A sophisticated Spring Boot architecture utilizing advanced AI models to categorize, summarize, and auto-reply to complex email threads.
+                        </p>
+                        <div className="flex flex-wrap gap-2 mb-8">
+                          {['Java 17', 'Spring Boot 3', 'Next.js', 'LangChain4j', 'PostgreSQL'].map(tag => (
+                             <span key={tag} className="text-[10px] font-black uppercase tracking-widest px-3 py-1 bg-white/5 border border-white/10 rounded-full text-neutral-300">{tag}</span>
+                          ))}
+                        </div>
+                      </div>
+                      <a href="https://github.com/AyushSinha2603/MailSense-AI" target="_blank" rel="noopener noreferrer" className="relative z-10 mt-auto inline-flex items-center text-sm font-black uppercase tracking-[0.2em] text-white hover:text-neutral-400 transition-colors w-max">
+                        View Code <ExternalLink className="w-4 h-4 ml-2" />
+                      </a>
                     </div>
-                    <h3 className="text-3xl font-black mb-4 uppercase tracking-tight">lichess-org / chess-openings</h3>
-                    <p className="text-neutral-400 text-lg leading-relaxed font-light">
-                      Improved opening classification and transposition mapping for Lichess, one of the largest open-source chess platforms.
-                    </p>
-                  </div>
-                  <a href="https://github.com/lichess-org/chess-openings" target="_blank" rel="noopener noreferrer" className="relative z-10 mt-12 inline-flex items-center text-sm font-black uppercase tracking-[0.2em] text-white hover:text-neutral-400 transition-colors w-max">
-                    View Impact <ExternalLink className="w-5 h-5 ml-3" />
-                  </a>
-                </motion.div>
+                  </motion.div>
 
-              </div>
-            </motion.div>
-          </section>
-</MorphSection>
+                  {/* Opening Forge */}
+                  <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[400px]">
+                    <div className="absolute bottom-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mb-20 transition-transform group-hover:scale-150"></div>
+                    <div className="relative z-10 h-full flex flex-col">
+                      <div>
+                        <div className="flex justify-between items-start mb-8">
+                          <div className="p-4 bg-white/5 border border-white/10 rounded-2xl group-hover:border-white/50 transition-colors"><Layout className="text-white w-6 h-6" /></div>
+                          <span className="text-[10px] sm:text-xs font-black uppercase tracking-widest bg-white/20 text-white px-3 py-2 rounded-full border border-white/20 text-center">Open Source & ML</span>
+                        </div>
+                        <h3 className="text-2xl font-black mb-4 uppercase tracking-tight text-white">Opening Forge</h3>
+                        <p className="text-neutral-400 text-sm leading-relaxed font-light mb-6">
+                          Chess opening preparation tool serving active players with real-time stats and dynamic game analysis.
+                        </p>
+                        <div className="flex flex-wrap gap-2 mb-8">
+                          {['Next.js', 'React', 'Tailwind', 'Chess API'].map(tag => (
+                             <span key={tag} className="text-[10px] font-black uppercase tracking-widest px-3 py-1 bg-white/5 border border-white/10 rounded-full text-neutral-300">{tag}</span>
+                          ))}
+                        </div>
+                      </div>
+                      <a href="https://github.com/AyushSinha2603/opening-forge" target="_blank" rel="noopener noreferrer" className="relative z-10 mt-auto inline-flex items-center text-sm font-black uppercase tracking-[0.2em] text-white hover:text-neutral-400 transition-colors w-max">
+                        View Project <ExternalLink className="w-4 h-4 ml-2" />
+                      </a>
+                    </div>
+                  </motion.div>
+
+                  {/* Sleepyhead Studios */}
+                  <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[400px]">
+                    <div className="absolute top-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -ml-20 -mt-20 transition-transform group-hover:scale-150"></div>
+                    <div className="relative z-10 h-full flex flex-col">
+                      <div>
+                        <div className="flex justify-between items-start mb-8">
+                          <div className="p-4 bg-white/5 border border-white/10 rounded-2xl group-hover:border-white/50 transition-colors"><Globe className="text-white w-6 h-6" /></div>
+                          <span className="text-[10px] sm:text-xs font-black uppercase tracking-widest bg-white/20 text-white px-3 py-2 rounded-full border border-white/20 text-center">Web Platform</span>
+                        </div>
+                        <h3 className="text-2xl font-black mb-4 uppercase tracking-tight text-white">Sleepyhead Studios</h3>
+                        <p className="text-neutral-400 text-sm leading-relaxed font-light mb-6">
+                          Deployed site and backend architecture for an indie game development studio, optimizing content delivery.
+                        </p>
+                        <div className="flex flex-wrap gap-2 mb-8">
+                          {['Node.js', 'Express', 'Vercel', 'PostgreSQL', 'Framer Motion', 'Lenis'].map(tag => (
+                             <span key={tag} className="text-[10px] font-black uppercase tracking-widest px-3 py-1 bg-white/5 border border-white/10 rounded-full text-neutral-300">{tag}</span>
+                          ))}
+                        </div>
+                      </div>
+                      <a href="#" className="relative z-10 mt-auto inline-flex items-center text-sm font-black uppercase tracking-[0.2em] text-white hover:text-neutral-400 transition-colors w-max">
+                        View Live <ExternalLink className="w-4 h-4 ml-2" />
+                      </a>
+                    </div>
+                  </motion.div>
+
+                  {/* Cineverse */}
+                  <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[400px]">
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
+                    <div className="relative z-10 h-full flex flex-col">
+                      <div>
+                        <div className="flex justify-between items-start mb-8">
+                          <div className="p-4 bg-white/5 border border-white/10 rounded-2xl group-hover:border-white/50 transition-colors"><Layout className="text-white w-6 h-6" /></div>
+                          <span className="text-[10px] sm:text-xs font-black uppercase tracking-widest bg-white/20 text-white px-3 py-2 rounded-full border border-white/20 text-center">Web App</span>
+                        </div>
+                        <h3 className="text-2xl font-black mb-4 uppercase tracking-tight text-white">Cineverse</h3>
+                        <p className="text-neutral-400 text-sm leading-relaxed font-light mb-6">
+                          A modern movie discovery app built with React, Appwrite, and TMDB API for dynamic UI rendering.
+                        </p>
+                        <div className="flex flex-wrap gap-2 mb-8">
+                          {['React', 'Tailwind', 'Appwrite', 'TMDB'].map(tag => (
+                             <span key={tag} className="text-[10px] font-black uppercase tracking-widest px-3 py-1 bg-white/5 border border-white/10 rounded-full text-neutral-300">{tag}</span>
+                          ))}
+                        </div>
+                      </div>
+                      <a href="https://github.com/AyushSinha2603/cineverse" target="_blank" rel="noopener noreferrer" className="relative z-10 mt-auto inline-flex items-center text-sm font-black uppercase tracking-[0.2em] text-white hover:text-neutral-400 transition-colors w-max">
+                        View Source <ExternalLink className="w-4 h-4 ml-2" />
+                      </a>
+                    </div>
+                  </motion.div>
+
+                  {/* Accident Prediction */}
+                  <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[400px]">
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
+                    <div className="relative z-10 h-full flex flex-col">
+                      <div>
+                        <div className="flex justify-between items-start mb-8">
+                          <div className="p-4 bg-white/5 border border-white/10 rounded-2xl group-hover:border-white/50 transition-colors"><Database className="text-white w-6 h-6" /></div>
+                          <span className="text-[10px] sm:text-xs font-black uppercase tracking-widest bg-white/20 text-white px-3 py-2 rounded-full border border-white/20 text-center">Data & ML</span>
+                        </div>
+                        <h3 className="text-2xl font-black mb-4 uppercase tracking-tight text-white">Accident Prediction</h3>
+                        <p className="text-neutral-400 text-sm leading-relaxed font-light mb-6">
+                          Machine learning models predicting traffic accident severity and frequency based on historical geospatial data, weather conditions, and time series analysis.
+                        </p>
+                        <div className="flex flex-wrap gap-2 mb-8">
+                          {['Scikit-Learn', 'XGBoost', 'GeoPandas'].map(tag => (
+                             <span key={tag} className="text-[10px] font-black uppercase tracking-widest px-3 py-1 bg-white/5 border border-white/10 rounded-full text-neutral-300">{tag}</span>
+                          ))}
+                        </div>
+                      </div>
+                      <a href="https://github.com/AyushSinha2603/Traffic-Accident-Severity-Prediction" target="_blank" rel="noopener noreferrer" className="relative z-10 mt-auto inline-flex items-center text-sm font-black uppercase tracking-[0.2em] text-white hover:text-neutral-400 transition-colors w-max">
+                        View Models <ExternalLink className="w-4 h-4 ml-2" />
+                      </a>
+                    </div>
+                  </motion.div>
+
+                  {/* Odd-Even Policy Analysis */}
+                  <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[400px]">
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
+                    <div className="relative z-10 h-full flex flex-col">
+                      <div>
+                        <div className="flex justify-between items-start mb-8">
+                          <div className="p-4 bg-white/5 border border-white/10 rounded-2xl group-hover:border-white/50 transition-colors"><Activity className="text-white w-6 h-6" /></div>
+                          <span className="text-[10px] sm:text-xs font-black uppercase tracking-widest bg-white/20 text-white px-3 py-2 rounded-full border border-white/20 text-center">Data & ML</span>
+                        </div>
+                        <h3 className="text-2xl font-black mb-4 uppercase tracking-tight text-white">Policy Analysis</h3>
+                        <p className="text-neutral-400 text-sm leading-relaxed font-light mb-6">
+                          Comprehensive statistical analysis and visualization of traffic flow and emission reductions during the Odd-Even vehicle rationing policy implementation.
+                        </p>
+                        <div className="flex flex-wrap gap-2 mb-8">
+                          {['Pandas', 'Matplotlib', 'Jupyter'].map(tag => (
+                             <span key={tag} className="text-[10px] font-black uppercase tracking-widest px-3 py-1 bg-white/5 border border-white/10 rounded-full text-neutral-300">{tag}</span>
+                          ))}
+                        </div>
+                      </div>
+                      <a href="https://github.com/AyushSinha2603/Odd-Even-Policy" target="_blank" rel="noopener noreferrer" className="relative z-10 mt-auto inline-flex items-center text-sm font-black uppercase tracking-[0.2em] text-white hover:text-neutral-400 transition-colors w-max">
+                        View Research <ExternalLink className="w-4 h-4 ml-2" />
+                      </a>
+                    </div>
+                  </motion.div>
+
+                </div>
+              </motion.div>
+            </section>
+          </MorphSection>
 
           {/* Section 4: Sleek Animated Footer */}
           <MorphSection>

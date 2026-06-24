@@ -336,7 +336,7 @@ export default function Home() {
                 Open Source
               </motion.h2>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 gap-6">
                 
                 {/* Lichess */}
                 <motion.div variants={fadeUp} className="p-8 lg:p-12 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-purple-500/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(192,132,252,0.6)] hover:rotate-1 z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[400px]">
@@ -353,24 +353,6 @@ export default function Home() {
                   </div>
                   <a href="https://github.com/lichess-org/chess-openings" target="_blank" rel="noopener noreferrer" className="relative z-10 mt-12 inline-flex items-center text-sm font-black uppercase tracking-[0.2em] text-white hover:text-purple-400 transition-colors w-max">
                     View Impact <ExternalLink className="w-5 h-5 ml-3" />
-                  </a>
-                </motion.div>
-
-                {/* Rosen Score */}
-                <motion.div variants={fadeUp} className="p-8 lg:p-12 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-purple-500/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(192,132,252,0.6)] hover:rotate-1 z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[400px]">
-                  <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500/30 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
-                  <div className="relative z-10">
-                    <div className="flex justify-between items-start mb-8">
-                      <div className="p-4 bg-white/5 border border-white/10 rounded-2xl group-hover:border-purple-500/50 transition-colors"><GitMerge className="text-neutral-400 w-8 h-8" /></div>
-                      <span className="text-xs font-black uppercase tracking-widest bg-neutral-500/20 text-neutral-300 px-4 py-2 rounded-full border border-neutral-500/20">Pending PR</span>
-                    </div>
-                    <h3 className="text-3xl font-black mb-4 uppercase tracking-tight">fitztrev / rosen-score</h3>
-                    <p className="text-neutral-400 text-lg leading-relaxed font-light">
-                      Engineered concurrent API request handling for cross-platform Lichess/Chess.com data fetching.
-                    </p>
-                  </div>
-                  <a href="https://github.com/fitztrev/rosen-score/pull/12" target="_blank" rel="noopener noreferrer" className="relative z-10 mt-12 inline-flex items-center text-sm font-black uppercase tracking-[0.2em] text-white hover:text-purple-400 transition-colors w-max">
-                    View PR <ExternalLink className="w-5 h-5 ml-3" />
                   </a>
                 </motion.div>
 

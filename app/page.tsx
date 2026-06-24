@@ -8,6 +8,11 @@ import { Stage, OrbitControls } from "@react-three/drei";
 import F1car from '../components/F1car';
 import Background3D from "@/components/Background3D";
 import { motion, AnimatePresence } from "framer-motion";
+
+import { SiTypescript, SiJavascript, SiPython, SiHtml5, SiCss, SiSpringboot, SiNodedotjs, SiPostgresql, SiGit, SiPostman, SiUbuntu, SiVercel, SiReact, SiNextdotjs, SiVite, SiTailwindcss, SiGreensock, SiFramer } from "react-icons/si";
+import { FaDatabase, FaNetworkWired, FaJava } from "react-icons/fa";
+import { TbLayoutAlignTop, TbBrandCSharp } from "react-icons/tb";
+
 import { useState, useEffect } from "react";
 import ContactForm from "@/components/ContactForm";
 
@@ -146,7 +151,7 @@ export default function Home() {
               {/* Tech Stack (Glassmorphism Cards) */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
                 {/* Languages */}
-                <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)]">
+                <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[420px]">
                   <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
                   <div className="flex items-center gap-4 mb-8 relative z-10">
                     <div className="p-3 bg-white/10 rounded-2xl group-hover:bg-white/20 transition-colors shadow-lg">
@@ -156,14 +161,14 @@ export default function Home() {
                   </div>
                   <div className="flex flex-wrap gap-3 relative z-10 w-full">
                     {[
-                      { name: 'Java', icon: <Cpu className="w-4 h-4" /> },
-                      { name: 'TypeScript', icon: <FileJson className="w-4 h-4" /> },
-                      { name: 'JavaScript', icon: <Code className="w-4 h-4" /> },
-                      { name: 'Python', icon: <Terminal className="w-4 h-4" /> },
-                      { name: 'C#', icon: <Hash className="w-4 h-4" /> },
-                      { name: 'SQL', icon: <Database className="w-4 h-4" /> },
-                      { name: 'HTML5', icon: <Layout className="w-4 h-4" /> },
-                      { name: 'CSS3', icon: <Layout className="w-4 h-4" /> }
+                      { name: 'Java', icon: <FaJava className="w-4 h-4" /> },
+                      { name: 'TypeScript', icon: <SiTypescript className="w-4 h-4" /> },
+                      { name: 'JavaScript', icon: <SiJavascript className="w-4 h-4" /> },
+                      { name: 'Python', icon: <SiPython className="w-4 h-4" /> },
+                      { name: 'C#', icon: <TbBrandCSharp className="w-4 h-4" /> },
+                      { name: 'SQL', icon: <FaDatabase className="w-4 h-4" /> },
+                      { name: 'HTML5', icon: <SiHtml5 className="w-4 h-4" /> },
+                      { name: 'CSS3', icon: <SiCss className="w-4 h-4" /> }
                     ].map(t => (
                       <div key={t.name} className="flex items-center gap-2 px-4 py-3 bg-white/5 rounded-2xl text-xs font-bold tracking-widest border border-white/10 uppercase text-neutral-400 hover:border-white/50 hover:text-white hover:bg-white/10 hover:-translate-y-1 hover:shadow-[0_10px_20px_-10px_rgba(255,255,255,0.4)] hover:scale-105 transition-all duration-300 cursor-default group/skill">
                         <span className="text-white/50 group-hover/skill:text-white transition-colors duration-300">{t.icon}</span>
@@ -174,7 +179,7 @@ export default function Home() {
                 </motion.div>
 
                 {/* Backend & Infrastructure */}
-                <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)]">
+                <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[420px]">
                   <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
                   <div className="flex items-center gap-4 mb-8 relative z-10">
                     <div className="p-3 bg-white/10 rounded-2xl group-hover:bg-white/20 transition-colors shadow-lg">
@@ -184,16 +189,14 @@ export default function Home() {
                   </div>
                   <div className="flex flex-wrap gap-3 relative z-10 w-full">
                     {[
-                      { name: 'Spring Boot', icon: <Server className="w-4 h-4" /> },
-                      { name: 'Node.js', icon: <Box className="w-4 h-4" /> },
-                      { name: 'PostgreSQL', icon: <Database className="w-4 h-4" /> },
-                      { name: 'REST APIs', icon: <Network className="w-4 h-4" /> },
-                      { name: 'Docker', icon: <Box className="w-4 h-4" /> },
-                      { name: 'Git', icon: <GitBranch className="w-4 h-4" /> },
-                      { name: 'Postman', icon: <Send className="w-4 h-4" /> },
-                      { name: 'Linux', icon: <Terminal className="w-4 h-4" /> },
-                      { name: 'Vercel', icon: <Triangle className="w-4 h-4" /> },
-                      { name: 'Gemini API', icon: <Sparkles className="w-4 h-4" /> }
+                      { name: 'Spring Boot', icon: <SiSpringboot className="w-4 h-4" /> },
+                      { name: 'Node.js', icon: <SiNodedotjs className="w-4 h-4" /> },
+                      { name: 'PostgreSQL', icon: <SiPostgresql className="w-4 h-4" /> },
+                      { name: 'REST APIs', icon: <FaNetworkWired className="w-4 h-4" /> },
+                      { name: 'Git', icon: <SiGit className="w-4 h-4" /> },
+                      { name: 'Postman', icon: <SiPostman className="w-4 h-4" /> },
+                      { name: 'Linux', icon: <SiUbuntu className="w-4 h-4" /> },
+                      { name: 'Vercel', icon: <SiVercel className="w-4 h-4" /> }
                     ].map(t => (
                       <div key={t.name} className="flex items-center gap-2 px-4 py-3 bg-white/5 rounded-2xl text-xs font-bold tracking-widest border border-white/10 uppercase text-neutral-400 hover:border-white/50 hover:text-white hover:bg-white/10 hover:-translate-y-1 hover:shadow-[0_10px_20px_-10px_rgba(255,255,255,0.4)] hover:scale-105 transition-all duration-300 cursor-default group/skill">
                         <span className="text-white/50 group-hover/skill:text-white transition-colors duration-300">{t.icon}</span>
@@ -204,7 +207,7 @@ export default function Home() {
                 </motion.div>
 
                 {/* Frontend & UI */}
-                <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)]">
+                <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[420px]">
                   <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
                   <div className="flex items-center gap-4 mb-8 relative z-10">
                     <div className="p-3 bg-white/10 rounded-2xl group-hover:bg-white/20 transition-colors shadow-lg">
@@ -214,13 +217,13 @@ export default function Home() {
                   </div>
                   <div className="flex flex-wrap gap-3 relative z-10 w-full">
                     {[
-                      { name: 'React', icon: <Code className="w-4 h-4" /> },
-                      { name: 'Next.js', icon: <Globe className="w-4 h-4" /> },
-                      { name: 'Vite', icon: <Zap className="w-4 h-4" /> },
-                      { name: 'Tailwind CSS', icon: <Layout className="w-4 h-4" /> },
-                      { name: 'GSAP', icon: <Activity className="w-4 h-4" /> },
-                      { name: 'Framer Motion', icon: <Activity className="w-4 h-4" /> },
-                      { name: 'Lenis', icon: <MoveVertical className="w-4 h-4" /> }
+                      { name: 'React', icon: <SiReact className="w-4 h-4" /> },
+                      { name: 'Next.js', icon: <SiNextdotjs className="w-4 h-4" /> },
+                      { name: 'Vite', icon: <SiVite className="w-4 h-4" /> },
+                      { name: 'Tailwind CSS', icon: <SiTailwindcss className="w-4 h-4" /> },
+                      { name: 'GSAP', icon: <SiGreensock className="w-4 h-4" /> },
+                      { name: 'Framer Motion', icon: <SiFramer className="w-4 h-4" /> },
+                      { name: 'Lenis', icon: <TbLayoutAlignTop className="w-4 h-4" /> }
                     ].map(t => (
                       <div key={t.name} className="flex items-center gap-2 px-4 py-3 bg-white/5 rounded-2xl text-xs font-bold tracking-widest border border-white/10 uppercase text-neutral-400 hover:border-white/50 hover:text-white hover:bg-white/10 hover:-translate-y-1 hover:shadow-[0_10px_20px_-10px_rgba(255,255,255,0.4)] hover:scale-105 transition-all duration-300 cursor-default group/skill">
                         <span className="text-white/50 group-hover/skill:text-white transition-colors duration-300">{t.icon}</span>
@@ -230,138 +233,6 @@ export default function Home() {
                   </div>
                 </motion.div>
               </div>\n            </motion.div>\n          </section>\n</MorphSection>
-
-          {/* Section 3: Featured Projects (6 Items) */}
-          <MorphSection>
-<section className="min-h-screen flex items-center justify-center py-24 px-6 md:p-4 lg:p-12 xl:p-24 relative">
-            <motion.div 
-              initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer}
-              className="max-w-7xl w-full"
-            >
-              <motion.h2 variants={fadeUp} className="text-5xl md:text-8xl font-black uppercase tracking-tighter mb-16 text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-400 md:to-neutral-800 drop-shadow-2xl">
-                Projects
-              </motion.h2>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                
-                {/* 1. MailSense AI */}
-                <motion.div variants={fadeUp} className="p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] hover:rotate-1 z-10 hover:z-50 group overflow-hidden relative shadow-[0_0_40px_rgba(0,0,0,1)] flex flex-col justify-between min-h-[500px]">
-                  <Mail className="absolute -right-10 -bottom-10 w-80 h-80 text-white/5 group-hover:text-white/10 transition-colors duration-700" />
-                  <div className="relative z-10">
-                    <h3 className="text-3xl font-black mb-6 uppercase tracking-tight">MailSense AI</h3>
-                    <p className="text-neutral-300 text-base leading-relaxed mb-8 font-light">
-                      AI-powered email assistant integrating Spring Boot, React, and the Gemini API. Designed a layered backend architecture achieving sub-500ms API response times across 100+ concurrent requests.
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-8">
-                      {['Java', 'Spring Boot', 'Spring AI', 'Next.js', 'Gemini'].map(t => (
-                        <span key={t} className="px-4 py-2 bg-white/5 rounded-full text-xs font-bold tracking-widest border border-white/5 uppercase">{t}</span>
-                      ))}
-                    </div>
-                  </div>
-                  <a href="https://github.com/AyushSinha2603/MailSense-AI" target="_blank" rel="noopener noreferrer" className="relative z-10 inline-flex items-center justify-center w-full px-8 py-4 bg-white text-black font-black uppercase tracking-[0.2em] text-xs rounded-full hover:bg-neutral-300 transition-colors shadow-[0_0_30px_rgba(255,255,255,0.1)] hover:shadow-[0_0_40px_rgba(,,,0.5)] mt-auto">
-                    View Source <Code className="w-4 h-4 ml-3" />
-                  </a>
-                </motion.div>
-
-                {/* 2. Opening Forge */}
-                <motion.div variants={fadeUp} className="p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] hover:rotate-1 z-10 hover:z-50 group overflow-hidden relative shadow-[0_0_40px_rgba(0,0,0,1)] flex flex-col justify-between min-h-[500px]">
-                  <Crown className="absolute -right-10 -bottom-10 w-80 h-80 text-white/5 group-hover:text-white/10 transition-colors duration-700" />
-                  <div className="relative z-10">
-                    <h3 className="text-3xl font-black mb-6 uppercase tracking-tight">Opening Forge</h3>
-                    <p className="text-neutral-300 text-base leading-relaxed mb-8 font-light">
-                      Chess opening analysis system with an optimized data model recognizing over 3,700 unique openings via Lichess ECO dataset.
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-8">
-                      {['Python', 'python-chess', 'NumPy', 'zstandard', 'tqdm', 'pytest'].map(t => (
-                        <span key={t} className="px-4 py-2 bg-white/5 rounded-full text-xs font-bold tracking-widest border border-white/5 uppercase">{t}</span>
-                      ))}
-                    </div>
-                  </div>
-                  <a href="https://github.com/AyushSinha2603/opening-forge" target="_blank" rel="noopener noreferrer" className="relative z-10 inline-flex items-center justify-center w-full px-8 py-4 bg-white text-black font-black uppercase tracking-[0.2em] text-xs rounded-full hover:bg-neutral-300 transition-colors shadow-[0_0_30px_rgba(255,255,255,0.1)] hover:shadow-[0_0_40px_rgba(,,,0.5)] mt-auto">
-                    View Source <Code className="w-4 h-4 ml-3" />
-                  </a>
-                </motion.div>
-
-                {/* 3. Sleepyhead Studios */}
-                <motion.div variants={fadeUp} className="p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] hover:rotate-1 z-10 hover:z-50 group overflow-hidden relative shadow-[0_0_40px_rgba(0,0,0,1)] flex flex-col justify-between min-h-[500px]">
-                  <Gamepad2 className="absolute -right-10 -bottom-10 w-80 h-80 text-white/5 group-hover:text-white/10 transition-colors duration-700" />
-                  <div className="relative z-10">
-                    <h3 className="text-3xl font-black mb-6 uppercase tracking-tight">Sleepyhead Studios</h3>
-                    <p className="text-neutral-300 text-base leading-relaxed mb-8 font-light">
-                      Official landing platform utilizing Next.js 14, React 19, and Framer Motion. Leveraged Server Components to optimize rendering performance.
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-8">
-                      {['Next.js', 'Lenis', 'Swiper', 'Tailwind', 'Lucide-React'].map(t => (
-                        <span key={t} className="px-4 py-2 bg-white/5 rounded-full text-xs font-bold tracking-widest border border-white/5 uppercase">{t}</span>
-                      ))}
-                    </div>
-                  </div>
-                  <a href="https://sleepyheadstudios.in" target="_blank" rel="noopener noreferrer" className="relative z-10 inline-flex items-center justify-center w-full px-8 py-4 bg-white text-black font-black uppercase tracking-[0.2em] text-xs rounded-full hover:bg-neutral-300 transition-colors shadow-[0_0_30px_rgba(255,255,255,0.1)] hover:shadow-[0_0_40px_rgba(,,,0.5)] mt-auto">
-                    Visit Website <ExternalLink className="w-4 h-4 ml-3" />
-                  </a>
-                </motion.div>
-
-                {/* 4. Cineverse */}
-                <motion.div variants={fadeUp} className="p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] hover:rotate-1 z-10 hover:z-50 group overflow-hidden relative shadow-[0_0_40px_rgba(0,0,0,1)] flex flex-col justify-between min-h-[500px]">
-                  <Layout className="absolute -right-10 -bottom-10 w-80 h-80 text-white/5 group-hover:text-white/10 transition-colors duration-700" />
-                  <div className="relative z-10">
-                    <h3 className="text-3xl font-black mb-6 uppercase tracking-tight">Cineverse</h3>
-                    <p className="text-neutral-300 text-base leading-relaxed mb-8 font-light">
-                      A modern movie discovery app built with React, Appwrite, and TMDB API for dynamic UI rendering.
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-8">
-                      {['React', 'Appwrite', 'TMDB'].map(t => (
-                        <span key={t} className="px-4 py-2 bg-white/5 rounded-full text-xs font-bold tracking-widest border border-white/5 uppercase">{t}</span>
-                      ))}
-                    </div>
-                  </div>
-                  <a href="https://github.com/AyushSinha2603/cineverse" target="_blank" rel="noopener noreferrer" className="relative z-10 inline-flex items-center justify-center w-full px-8 py-4 bg-white text-black font-black uppercase tracking-[0.2em] text-xs rounded-full hover:bg-neutral-300 transition-colors shadow-[0_0_30px_rgba(255,255,255,0.1)] hover:shadow-[0_0_40px_rgba(,,,0.5)] mt-auto">
-                    View Source <Code className="w-4 h-4 ml-3" />
-                  </a>
-                </motion.div>
-
-                {/* 5. Accident Prediction Model */}
-                <motion.div variants={fadeUp} className="p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] hover:rotate-1 z-10 hover:z-50 group overflow-hidden relative shadow-[0_0_40px_rgba(0,0,0,1)] flex flex-col justify-between min-h-[500px]">
-                  <Activity className="absolute -right-10 -bottom-10 w-80 h-80 text-white/5 group-hover:text-white/10 transition-colors duration-700" />
-                  <div className="relative z-10">
-                    <h3 className="text-3xl font-black mb-6 uppercase tracking-tight">Accident Prediction</h3>
-                    <p className="text-neutral-300 text-base leading-relaxed mb-8 font-light">
-                      Machine learning system predicting accident severity, trained on 300,000+ real-world traffic records.
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-8">
-                      {['Python', 'Pandas', 'NumPy', 'Scikit Learn', 'XGBoost', 'TensorFlow', 'Keras', 'SMOTE'].map(t => (
-                        <span key={t} className="px-4 py-2 bg-white/5 rounded-full text-xs font-bold tracking-widest border border-white/5 uppercase">{t}</span>
-                      ))}
-                    </div>
-                  </div>
-                  <a href="https://github.com/AyushSinha2603/Traffic-Accident-Severity-Prediction" target="_blank" rel="noopener noreferrer" className="relative z-10 inline-flex items-center justify-center w-full px-8 py-4 bg-white text-black font-black uppercase tracking-[0.2em] text-xs rounded-full hover:bg-neutral-300 transition-colors shadow-[0_0_30px_rgba(255,255,255,0.1)] hover:shadow-[0_0_40px_rgba(,,,0.5)] mt-auto">
-                    View Source <Code className="w-4 h-4 ml-3" />
-                  </a>
-                </motion.div>
-
-                {/* 6. Odd Even Policy Analysis */}
-                <motion.div variants={fadeUp} className="p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] hover:rotate-1 z-10 hover:z-50 group overflow-hidden relative shadow-[0_0_40px_rgba(0,0,0,1)] flex flex-col justify-between min-h-[500px]">
-                  <Rocket className="absolute -right-10 -bottom-10 w-80 h-80 text-white/5 group-hover:text-white/10 transition-colors duration-700" />
-                  <div className="relative z-10">
-                    <h3 className="text-3xl font-black mb-6 uppercase tracking-tight">Odd Even Policy</h3>
-                    <p className="text-neutral-300 text-base leading-relaxed mb-8 font-light">
-                      Data analysis project evaluating the impact of Delhi's Odd-Even traffic policy on air pollution levels using real-world datasets, scientific computing, and visualization.
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-8">
-                      {['Python', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'SciPy'].map(t => (
-                        <span key={t} className="px-4 py-2 bg-white/5 rounded-full text-xs font-bold tracking-widest border border-white/5 uppercase">{t}</span>
-                      ))}
-                    </div>
-                  </div>
-                  <a href="https://github.com/AyushSinha2603/Odd-Even-Policy" target="_blank" rel="noopener noreferrer" className="relative z-10 inline-flex items-center justify-center w-full px-8 py-4 bg-white text-black font-black uppercase tracking-[0.2em] text-xs rounded-full hover:bg-neutral-300 transition-colors shadow-[0_0_30px_rgba(255,255,255,0.1)] hover:shadow-[0_0_40px_rgba(,,,0.5)] mt-auto">
-                    View Source <Code className="w-4 h-4 ml-3" />
-                  </a>
-                </motion.div>
-
-              </div>
-            </motion.div>
-          </section>
-</MorphSection>
 
           {/* Section: Open Source Contributions */}
           <MorphSection>

@@ -257,7 +257,7 @@ export default function Home() {
                           A sophisticated Spring Boot architecture utilizing advanced AI models to categorize, summarize, and auto-reply to complex email threads.
                         </p>
                         <div className="flex flex-wrap gap-2 mb-8">
-                          {['Java 17', 'Spring Boot 3', 'Next.js', 'LangChain4j', 'PostgreSQL'].map(tag => (
+                          {['Java', 'Spring Boot', 'Spring AI', 'Next.js', 'Gemini'].map(tag => (
                              <span key={tag} className="text-[10px] font-black uppercase tracking-widest px-3 py-1 bg-white/5 border border-white/10 rounded-full text-neutral-300">{tag}</span>
                           ))}
                         </div>
@@ -282,7 +282,7 @@ export default function Home() {
                           Chess opening preparation tool serving active players with real-time stats and dynamic game analysis.
                         </p>
                         <div className="flex flex-wrap gap-2 mb-8">
-                          {['Next.js', 'React', 'Tailwind', 'Chess API'].map(tag => (
+                          {['Python', 'Python-Chess', 'Numpy', 'Zstandard', 'Tqdm', 'Pytest'].map(tag => (
                              <span key={tag} className="text-[10px] font-black uppercase tracking-widest px-3 py-1 bg-white/5 border border-white/10 rounded-full text-neutral-300">{tag}</span>
                           ))}
                         </div>
@@ -307,7 +307,7 @@ export default function Home() {
                           Deployed site and backend architecture for an indie game development studio, optimizing content delivery.
                         </p>
                         <div className="flex flex-wrap gap-2 mb-8">
-                          {['Node.js', 'Express', 'Vercel', 'PostgreSQL', 'Framer Motion', 'Lenis'].map(tag => (
+                          {['Next.js', 'Tailwind', 'Framer Motion', 'Lenis'].map(tag => (
                              <span key={tag} className="text-[10px] font-black uppercase tracking-widest px-3 py-1 bg-white/5 border border-white/10 rounded-full text-neutral-300">{tag}</span>
                           ))}
                         </div>
@@ -357,7 +357,7 @@ export default function Home() {
                           Machine learning models predicting traffic accident severity and frequency based on historical geospatial data, weather conditions, and time series analysis.
                         </p>
                         <div className="flex flex-wrap gap-2 mb-8">
-                          {['Scikit-Learn', 'XGBoost', 'GeoPandas'].map(tag => (
+                          {['Python', 'NumPy', 'Pandas', 'Scikit-Learn', 'XGBoost', 'TensorFlow', 'Keras'].map(tag => (
                              <span key={tag} className="text-[10px] font-black uppercase tracking-widest px-3 py-1 bg-white/5 border border-white/10 rounded-full text-neutral-300">{tag}</span>
                           ))}
                         </div>
@@ -377,18 +377,77 @@ export default function Home() {
                           <div className="p-4 bg-white/5 border border-white/10 rounded-2xl group-hover:border-white/50 transition-colors"><Activity className="text-white w-6 h-6" /></div>
                           <span className="text-[10px] sm:text-xs font-black uppercase tracking-widest bg-white/20 text-white px-3 py-2 rounded-full border border-white/20 text-center">Data & ML</span>
                         </div>
-                        <h3 className="text-2xl font-black mb-4 uppercase tracking-tight text-white">Policy Analysis</h3>
+                        <h3 className="text-2xl font-black mb-4 uppercase tracking-tight text-white">Odd Even Policy</h3>
                         <p className="text-neutral-400 text-sm leading-relaxed font-light mb-6">
                           Comprehensive statistical analysis and visualization of traffic flow and emission reductions during the Odd-Even vehicle rationing policy implementation.
                         </p>
                         <div className="flex flex-wrap gap-2 mb-8">
-                          {['Pandas', 'Matplotlib', 'Jupyter'].map(tag => (
+                          {['Pandas', 'Matplotlib', 'Seaborn', 'Jupyter'].map(tag => (
                              <span key={tag} className="text-[10px] font-black uppercase tracking-widest px-3 py-1 bg-white/5 border border-white/10 rounded-full text-neutral-300">{tag}</span>
                           ))}
                         </div>
                       </div>
                       <a href="https://github.com/AyushSinha2603/Odd-Even-Policy" target="_blank" rel="noopener noreferrer" className="relative z-10 mt-auto inline-flex items-center text-sm font-black uppercase tracking-[0.2em] text-white hover:text-neutral-400 transition-colors w-max">
                         View Research <ExternalLink className="w-4 h-4 ml-2" />
+                      </a>
+                    </div>
+                  </motion.div>
+
+                </div>
+              </motion.div>
+            </section>
+          </MorphSection>
+
+          {/* Section 3.5: Open Source */}
+          <MorphSection>
+            <section className="min-h-screen flex items-center justify-center p-4 lg:p-12 xl:p-24 relative">
+              <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-white/[0.02] via-transparent to-transparent"></div>
+              <motion.div 
+                initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer}
+                className="max-w-7xl w-full space-y-12 z-10"
+              >
+                <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-black tracking-tight uppercase flex items-center gap-4 text-white drop-shadow-2xl">
+                  <span className="w-12 h-2 bg-white block shadow-[0_0_20px_rgba(255,255,255,0.8)]"></span> Open Source Contributions
+                </motion.h2>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  
+                  {/* Lichess */}
+                  <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[300px]">
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
+                    <div className="relative z-10 h-full flex flex-col">
+                      <div>
+                        <div className="flex justify-between items-start mb-8">
+                          <div className="p-4 bg-white/5 border border-white/10 rounded-2xl group-hover:border-white/50 transition-colors"><GitMerge className="text-white w-6 h-6" /></div>
+                          <span className="text-[10px] sm:text-xs font-black uppercase tracking-widest bg-white/20 text-white px-3 py-2 rounded-full border border-white/20 text-center">Merged PRs</span>
+                        </div>
+                        <h3 className="text-2xl font-black mb-4 tracking-tight text-white">lichess-org / chess-openings</h3>
+                        <p className="text-neutral-400 text-sm leading-relaxed font-light mb-6">
+                          Improved opening classification and transposition mapping for Lichess, one of the largest open-source chess platforms.
+                        </p>
+                      </div>
+                      <a href="https://github.com/lichess-org/chess-openings" target="_blank" rel="noopener noreferrer" className="relative z-10 mt-auto inline-flex items-center text-sm font-black uppercase tracking-[0.2em] text-white hover:text-neutral-400 transition-colors w-max">
+                        View Impact <ExternalLink className="w-4 h-4 ml-2" />
+                      </a>
+                    </div>
+                  </motion.div>
+
+                  {/* Rosen Score */}
+                  <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[300px]">
+                    <div className="absolute bottom-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mb-20 transition-transform group-hover:scale-150"></div>
+                    <div className="relative z-10 h-full flex flex-col">
+                      <div>
+                        <div className="flex justify-between items-start mb-8">
+                          <div className="p-4 bg-white/5 border border-white/10 rounded-2xl group-hover:border-white/50 transition-colors"><GitMerge className="text-white w-6 h-6" /></div>
+                          <span className="text-[10px] sm:text-xs font-black uppercase tracking-widest bg-white/20 text-white px-3 py-2 rounded-full border border-white/20 text-center">Merged PR</span>
+                        </div>
+                        <h3 className="text-2xl font-black mb-4 tracking-tight text-white">fitztrev / rosen-score</h3>
+                        <p className="text-neutral-400 text-sm leading-relaxed font-light mb-6">
+                          Engineered concurrent API request handling for cross-platform Lichess/Chess.com data fetching.
+                        </p>
+                      </div>
+                      <a href="https://github.com/fitztrev/rosen-score/pull/12" target="_blank" rel="noopener noreferrer" className="relative z-10 mt-auto inline-flex items-center text-sm font-black uppercase tracking-[0.2em] text-white hover:text-neutral-400 transition-colors w-max">
+                        View PR <ExternalLink className="w-4 h-4 ml-2" />
                       </a>
                     </div>
                   </motion.div>

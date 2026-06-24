@@ -339,7 +339,7 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 
                 {/* Lichess */}
-                <motion.div variants={fadeUp} className="p-8 lg:p-12 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-purple-500/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(192,132,252,0.6)] hover:rotate-1 z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[400px]">
+                <motion.div variants={fadeUp} className="md:col-start-2 p-8 lg:p-12 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-purple-500/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(192,132,252,0.6)] hover:rotate-1 z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[400px]">
                   <div className="absolute bottom-0 left-0 w-96 h-96 bg-fuchsia-500/30 rounded-full blur-3xl -ml-20 -mb-20 transition-transform group-hover:scale-150"></div>
                   <div className="relative z-10">
                     <div className="flex justify-between items-start mb-8">

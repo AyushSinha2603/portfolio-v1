@@ -76,7 +76,7 @@ export default function Home() {
           
           {/* Section 1: Hero */}
           <MorphSection>
-<section className="min-h-[90vh] md:min-h-screen flex flex-col items-center justify-center p-8 pb-0 md:pb-8 lg:p-24 relative">
+<section className="min-h-screen flex flex-col items-center justify-center p-8 pb-0 md:pb-8 lg:p-24 relative">
             <motion.div 
               initial="hidden" animate="visible" variants={staggerContainer}
               className="max-w-5xl w-full text-center space-y-6 mix-blend-difference"
@@ -96,12 +96,12 @@ export default function Home() {
 
           {/* Section 1.5: About Me */}
           <MorphSection>
-<section className="flex items-center justify-center pt-8 pb-24 px-6 md:p-4 md:py-24 lg:p-12 xl:p-24 relative z-10 mt-0">
+<section className="flex items-center justify-center pt-8 pb-12 md:pb-24 px-6 md:p-4 lg:p-12 xl:p-24 relative z-10 mt-0">
             <motion.div 
               initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer}
               className="max-w-7xl w-full relative z-10 mx-auto"
             >
-                <motion.div variants={fadeUp} className="p-6 md:p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/40 backdrop-blur-3xl shadow-[0_0_40px_rgba(0,0,0,1)] hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] hover:rotate-1 z-10 hover:z-50 group flex flex-col gap-6 items-center text-center relative overflow-hidden w-full max-w-2xl mx-auto aspect-square justify-center">
+                <motion.div variants={fadeUp} className="p-6 md:p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/40 backdrop-blur-3xl shadow-[0_0_40px_rgba(0,0,0,1)] hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] hover:rotate-1 z-10 hover:z-50 group flex flex-col gap-6 items-center text-center relative overflow-hidden w-full max-w-2xl mx-auto md:aspect-square justify-center">
                   
                   {/* Photo */}
                   <div className="relative flex justify-center shrink-0">
@@ -137,14 +137,16 @@ export default function Home() {
 
           {/* Section 2: Dashboard */}
           <MorphSection>
-<section className="min-h-[70vh] flex items-center justify-center py-24 px-6 md:p-4 lg:p-12 xl:p-24 relative">
+            <section className="min-h-0 md:min-h-[70vh] flex items-center justify-center py-12 md:py-24 px-6 md:p-4 lg:p-12 xl:p-24 relative">
             <motion.div 
               initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer}
               className="max-w-7xl w-full relative z-10 mx-auto"
             >
-              <motion.h2 variants={fadeUp} className="text-5xl md:text-8xl font-black uppercase tracking-tighter mb-16 text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-400 md:to-neutral-800 drop-shadow-2xl">
-                Tech Stack
-              </motion.h2>
+              <div className="flex justify-start md:justify-end w-full">
+                <motion.h2 variants={fadeUp} className="text-5xl md:text-8xl font-black uppercase tracking-tighter mb-16 text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-400 md:to-neutral-800 drop-shadow-2xl text-left md:text-right">
+                  Tech Stack
+                </motion.h2>
+              </div>
 
               {/* Tech Stack (Glassmorphism Cards) */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
@@ -229,11 +231,14 @@ export default function Home() {
                     ))}
                   </div>
                 </motion.div>
-              </div>\n            </motion.div>\n          </section>\n</MorphSection>
+              </div>
+            </motion.div>
+          </section>
+        </MorphSection>
 
           {/* Section 3: Projects */}
           <MorphSection>
-            <section className="min-h-[70vh] flex flex-col items-center justify-center py-24 px-6 md:p-4 lg:p-12 xl:p-24 relative">
+            <section className="min-h-0 md:min-h-[70vh] flex flex-col items-center justify-center py-12 md:py-24 px-6 md:p-4 lg:p-12 xl:p-24 relative">
               <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer} className="max-w-7xl w-full">
                 <motion.h2 variants={fadeUp} className="text-5xl md:text-8xl font-black uppercase tracking-tighter mb-16 text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-400 md:to-neutral-800 drop-shadow-2xl">
                   Projects
@@ -398,7 +403,7 @@ export default function Home() {
 
           {/* Section 3.5: Open Source */}
           <MorphSection>
-            <section className="min-h-[50vh] flex flex-col items-center justify-center py-24 px-6 md:p-4 lg:p-12 xl:p-24 relative">
+            <section className="min-h-0 md:min-h-[50vh] flex flex-col items-center justify-center pt-8 md:pt-12 pb-24 md:pb-32 px-6 md:p-4 lg:p-12 xl:p-24 relative">
               <motion.div 
                 initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer}
                 className="max-w-7xl w-full"
@@ -439,7 +444,7 @@ export default function Home() {
 
           {/* Section 4: Sleek Animated Footer */}
           <MorphSection>
-            <section className="relative flex flex-col justify-center bg-transparent py-16">
+            <section className="relative flex flex-col justify-center bg-transparent pt-20 md:pt-32 pb-16 md:pb-24">
               <div className="max-w-7xl mx-auto w-full px-8 lg:px-24 relative z-10 flex flex-col items-center text-center">
                 <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer} className="space-y-8">
                   <motion.h2 variants={fadeUp} className="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter leading-none drop-shadow-2xl">

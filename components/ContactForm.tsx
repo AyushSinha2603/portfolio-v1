@@ -16,11 +16,36 @@ export default function ContactForm() {
     setIsSubmitting(true);
     setStatusMessage("");
 
+    const formData = new FormData(formRef.current);
+    const nameVal = formData.get("name") as string;
+    const subjectVal = formData.get("subject") as string;
+    const emailVal = formData.get("email") as string;
+    const messageVal = formData.get("message") as string;
+
+    const templateParams = {
+      name: nameVal,
+      from_name: nameVal,
+      title: subjectVal,
+      subject: subjectVal,
+      email: emailVal,
+      sender_mail: emailVal,
+      sender_email: emailVal,
+      reply_to: emailVal,
+      user_email: emailVal,
+      senders_mail: emailVal,
+      senders_email: emailVal,
+      from_email: emailVal,
+      user_mail: emailVal,
+      mail: emailVal,
+      sender: emailVal,
+      message: messageVal,
+    };
+
     emailjs
-      .sendForm(
+      .send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-        formRef.current,
+        templateParams,
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
       )
       .then(
@@ -39,7 +64,7 @@ export default function ContactForm() {
   return (
     <form ref={formRef} onSubmit={sendEmail}>
       <input type="text" name="name" placeholder="Your Name" required />
-      <input type="text" name="title" placeholder="Subject/Title" required />
+      <input type="text" name="subject" placeholder="Subject" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" placeholder="Your Message" required />
       <button type="submit" disabled={isSubmitting}>

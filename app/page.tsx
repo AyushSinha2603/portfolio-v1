@@ -119,17 +119,15 @@ export default function Home() {
                     </p>
                     <div className="h-px w-16 mx-auto bg-white/10 my-3 md:my-4"></div>
                     <p className="leading-relaxed text-neutral-300">
-                      I don’t just build applications; I <span className="text-white font-medium">engineer them for scale.</span>
+                      What do scalable architecture, Formula 1, and chess have in common?<br/>
+                      <span className="text-white font-medium">Calculated precision.</span>
                     </p>
                     <p className="leading-relaxed text-neutral-300">
-                      <span className="text-white font-medium">My focus?</span> Constructing high-performance backend systems with Java and Spring Boot.
-                    </p>
-                    <p className="leading-relaxed text-neutral-300">
-                      <span className="text-white font-medium">My passion?</span> Crafting clean, efficient architecture that drives modern, lightning-fast web experiences with Next.js.
+                      That’s exactly how I approach software engineering! I don’t just build apps—I <span className="text-white font-medium">architect high-performance systems</span> designed to move fast and scale effortlessly.
                     </p>
                     <div className="h-px w-16 mx-auto bg-white/10 my-3 md:my-4"></div>
                     <p className="leading-relaxed text-neutral-300">
-                      Beyond the IDE, I thrive on the <span className="text-white font-medium">strategy of the chessboard</span>, the <span className="text-white font-medium">precision of F1</span>, and the <span className="text-white font-medium">creative perspective of photography.</span>
+                      When the IDE closes... you'll find me analyzing a Grand Prix, dominating the chessboard, or viewing the world through a camera lens. <span className="text-white font-bold">Let's build something bold!</span>
                     </p>
                   </div>
                 </motion.div>

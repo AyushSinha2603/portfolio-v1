@@ -101,23 +101,23 @@ export default function Home() {
               initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer}
               className="max-w-7xl w-full relative z-10 mx-auto"
             >
-                <motion.div variants={fadeUp} className="p-8 md:p-12 lg:p-16 rounded-[3rem] border border-white/5 bg-black/40 backdrop-blur-3xl shadow-[0_0_40px_rgba(0,0,0,1)] hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] hover:rotate-1 z-10 hover:z-50 group flex flex-col lg:flex-row gap-16 lg:gap-24 items-center relative overflow-hidden w-full">
+                <motion.div variants={fadeUp} className="p-6 md:p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/40 backdrop-blur-3xl shadow-[0_0_40px_rgba(0,0,0,1)] hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] hover:rotate-1 z-10 hover:z-50 group flex flex-col gap-6 items-center text-center relative overflow-hidden w-full max-w-2xl mx-auto aspect-square justify-center">
                   
                   {/* Photo */}
                   <div className="relative flex justify-center shrink-0">
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 md:w-[24rem] md:h-[24rem] bg-white/10 blur-3xl rounded-full z-0 opacity-60 transition-transform group-hover:scale-125 duration-700"></div>
-                    <div className="relative z-10 w-64 h-64 md:w-80 md:h-80 shrink-0 rounded-full overflow-hidden border-4 border-white/10 shadow-[0_0_40px_rgba(255,255,255,0.1)] group-hover:border-white/30 transition-colors duration-500">
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 md:w-[20rem] md:h-[20rem] bg-white/10 blur-3xl rounded-full z-0 opacity-60 transition-transform group-hover:scale-125 duration-700"></div>
+                    <div className="relative z-10 w-32 h-32 md:w-40 md:h-40 shrink-0 rounded-full overflow-hidden border-4 border-white/10 shadow-[0_0_40px_rgba(255,255,255,0.1)] group-hover:border-white/30 transition-colors duration-500">
                       <img src="/image/profilepic.jpeg" alt="Ayush Sinha" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale" />
                     </div>
                   </div>
 
                   {/* Text */}
-                  <div className="space-y-8 text-lg md:text-xl text-neutral-400 font-light leading-relaxed tracking-wide flex-1 relative z-10 w-full">
-                    <p className="text-2xl md:text-3xl font-black text-white uppercase tracking-tight leading-snug">
+                  <div className="space-y-4 md:space-y-5 text-sm md:text-base text-neutral-400 font-light leading-relaxed tracking-wide relative z-10 w-full">
+                    <p className="text-lg md:text-xl font-black text-white uppercase tracking-tight leading-snug">
                       Software Engineer.<br/>
-                      <span className="text-neutral-400 font-light text-xl md:text-2xl tracking-widest">NIT Rourkela '27.</span>
+                      <span className="text-neutral-400 font-light text-base tracking-widest">NIT Rourkela '27.</span>
                     </p>
-                    <div className="h-px w-full bg-white/10 my-6"></div>
+                    <div className="h-px w-16 mx-auto bg-white/10 my-3 md:my-4"></div>
                     <p className="leading-relaxed text-neutral-300">
                       I don’t just build applications; I <span className="text-white font-medium">engineer them for scale.</span>
                     </p>
@@ -127,7 +127,7 @@ export default function Home() {
                     <p className="leading-relaxed text-neutral-300">
                       <span className="text-white font-medium">My passion?</span> Crafting clean, efficient architecture that drives modern, lightning-fast web experiences with Next.js.
                     </p>
-                    <div className="h-px w-full bg-white/10 my-6"></div>
+                    <div className="h-px w-16 mx-auto bg-white/10 my-3 md:my-4"></div>
                     <p className="leading-relaxed text-neutral-300">
                       Beyond the IDE, I thrive on the <span className="text-white font-medium">strategy of the chessboard</span>, the <span className="text-white font-medium">precision of F1</span>, and the <span className="text-white font-medium">creative perspective of photography.</span>
                     </p>
@@ -151,7 +151,7 @@ export default function Home() {
               {/* Tech Stack (Glassmorphism Cards) */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
                 {/* Languages */}
-                <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[420px]">
+                <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] aspect-square">
                   <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
                   <div className="flex items-center gap-4 mb-8 relative z-10">
                     <div className="p-3 bg-white/10 rounded-2xl group-hover:bg-white/20 transition-colors shadow-lg">
@@ -179,7 +179,7 @@ export default function Home() {
                 </motion.div>
 
                 {/* Backend & Infrastructure */}
-                <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[420px]">
+                <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] aspect-square">
                   <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
                   <div className="flex items-center gap-4 mb-8 relative z-10">
                     <div className="p-3 bg-white/10 rounded-2xl group-hover:bg-white/20 transition-colors shadow-lg">
@@ -206,7 +206,7 @@ export default function Home() {
                 </motion.div>
 
                 {/* Frontend & UI */}
-                <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[420px]">
+                <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] aspect-square">
                   <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
                   <div className="flex items-center gap-4 mb-8 relative z-10">
                     <div className="p-3 bg-white/10 rounded-2xl group-hover:bg-white/20 transition-colors shadow-lg">
@@ -244,7 +244,7 @@ export default function Home() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   
                   {/* MailSense AI */}
-                  <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[400px]">
+                  <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] aspect-square">
                     <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
                     <div className="relative z-10 h-full flex flex-col">
                       <div>
@@ -269,7 +269,7 @@ export default function Home() {
                   </motion.div>
 
                   {/* Opening Forge */}
-                  <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[400px]">
+                  <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] aspect-square">
                     <div className="absolute bottom-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mb-20 transition-transform group-hover:scale-150"></div>
                     <div className="relative z-10 h-full flex flex-col">
                       <div>
@@ -294,7 +294,7 @@ export default function Home() {
                   </motion.div>
 
                   {/* Sleepyhead Studios */}
-                  <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[400px]">
+                  <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] aspect-square">
                     <div className="absolute top-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -ml-20 -mt-20 transition-transform group-hover:scale-150"></div>
                     <div className="relative z-10 h-full flex flex-col">
                       <div>
@@ -319,7 +319,7 @@ export default function Home() {
                   </motion.div>
 
                   {/* Cineverse */}
-                  <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[400px]">
+                  <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] aspect-square">
                     <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
                     <div className="relative z-10 h-full flex flex-col">
                       <div>
@@ -344,7 +344,7 @@ export default function Home() {
                   </motion.div>
 
                   {/* Accident Prediction */}
-                  <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[400px]">
+                  <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] aspect-square">
                     <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
                     <div className="relative z-10 h-full flex flex-col">
                       <div>
@@ -369,7 +369,7 @@ export default function Home() {
                   </motion.div>
 
                   {/* Odd-Even Policy Analysis */}
-                  <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[400px]">
+                  <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] aspect-square">
                     <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
                     <div className="relative z-10 h-full flex flex-col">
                       <div>
@@ -412,9 +412,9 @@ export default function Home() {
                 </div>
 
                 <div className="flex justify-start md:justify-end w-full">
-                  <div className="w-full max-w-xl">
+                  <div className="w-full max-w-sm">
                   {/* Lichess */}
-                  <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] min-h-[300px]">
+                  <motion.div variants={fadeUp} className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col justify-between relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] aspect-square">
                     <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
                     <div className="relative z-10 h-full flex flex-col">
                       <div>

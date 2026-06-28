@@ -266,7 +266,7 @@ export default function Home() {
                         </div>
                       </div>
                       <a href="https://github.com/AyushSinha2603/MailSense-AI" target="_blank" rel="noopener noreferrer" className="relative z-10 mt-auto inline-flex items-center text-sm font-black uppercase tracking-[0.2em] text-white hover:text-neutral-400 transition-colors w-max">
-                        View Code <ExternalLink className="w-4 h-4 ml-2" />
+                        View Project <ExternalLink className="w-4 h-4 ml-2" />
                       </a>
                     </div>
                   </motion.div>
@@ -315,7 +315,7 @@ export default function Home() {
                           ))}
                         </div>
                       </div>
-                      <a href="#" className="relative z-10 mt-auto inline-flex items-center text-sm font-black uppercase tracking-[0.2em] text-white hover:text-neutral-400 transition-colors w-max">
+                      <a href="https://sleepyheadstudios.in/" target="_blank" rel="noopener noreferrer" className="relative z-10 mt-auto inline-flex items-center text-sm font-black uppercase tracking-[0.2em] text-white hover:text-neutral-400 transition-colors w-max">
                         View Live <ExternalLink className="w-4 h-4 ml-2" />
                       </a>
                     </div>
@@ -341,7 +341,7 @@ export default function Home() {
                         </div>
                       </div>
                       <a href="https://github.com/AyushSinha2603/cineverse" target="_blank" rel="noopener noreferrer" className="relative z-10 mt-auto inline-flex items-center text-sm font-black uppercase tracking-[0.2em] text-white hover:text-neutral-400 transition-colors w-max">
-                        View Source <ExternalLink className="w-4 h-4 ml-2" />
+                        View Project <ExternalLink className="w-4 h-4 ml-2" />
                       </a>
                     </div>
                   </motion.div>
@@ -351,22 +351,22 @@ export default function Home() {
                     <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
                     <div className="relative z-10 h-full flex flex-col">
                       <div>
-                        <div className="flex justify-between items-start mb-8">
+                        <div className="flex justify-between items-start mb-4">
                           <div className="p-4 bg-white/5 border border-white/10 rounded-2xl group-hover:border-white/50 transition-colors"><Database className="text-white w-6 h-6" /></div>
                           <span className="text-[10px] sm:text-xs font-black uppercase tracking-widest bg-white/20 text-white px-3 py-2 rounded-full border border-white/20 text-center">Data & ML</span>
                         </div>
-                        <h3 className="text-2xl font-black mb-4 uppercase tracking-tight text-white">Accident Prediction</h3>
-                        <p className="text-neutral-400 text-sm leading-relaxed font-light mb-6">
-                          Machine learning models predicting traffic accident severity and frequency based on historical geospatial data, weather conditions, and time series analysis.
+                        <h3 className="text-2xl font-black mb-3 uppercase tracking-tight text-white">Accident Prediction</h3>
+                        <p className="text-neutral-400 text-sm leading-relaxed font-light mb-4">
+                          Machine learning models predicting traffic accident severity based on historical geospatial data, weather, and time series.
                         </p>
-                        <div className="flex flex-wrap gap-2 mb-8">
-                          {['Python', 'NumPy', 'Pandas', 'Scikit-Learn', 'XGBoost', 'TensorFlow', 'Keras'].map(tag => (
+                        <div className="flex flex-wrap gap-2 mb-4">
+                          {['Python', 'Pandas', 'Scikit-Learn', 'XGBoost', 'TensorFlow'].map(tag => (
                              <span key={tag} className="text-[10px] font-black uppercase tracking-widest px-3 py-1 bg-white/5 border border-white/10 rounded-full text-neutral-300">{tag}</span>
                           ))}
                         </div>
                       </div>
                       <a href="https://github.com/AyushSinha2603/Traffic-Accident-Severity-Prediction" target="_blank" rel="noopener noreferrer" className="relative z-10 mt-auto inline-flex items-center text-sm font-black uppercase tracking-[0.2em] text-white hover:text-neutral-400 transition-colors w-max">
-                        View Models <ExternalLink className="w-4 h-4 ml-2" />
+                        View Research <ExternalLink className="w-4 h-4 ml-2" />
                       </a>
                     </div>
                   </motion.div>

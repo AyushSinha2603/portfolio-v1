@@ -16,7 +16,7 @@ interface ParticleData {
 }
 
 function Particles() {
-  const count = 1500;
+  const count = 400;
   const mesh = useRef<THREE.InstancedMesh>(null);
   const dummy = useMemo(() => new THREE.Object3D(), []);
 

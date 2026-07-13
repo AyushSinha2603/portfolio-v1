@@ -152,7 +152,7 @@ export default function Home() {
               >
                 <motion.h1
                   variants={fadeUp}
-                  className="text-7xl md:text-9xl lg:text-[12rem] font-black tracking-tighter uppercase leading-none drop-shadow-2xl"
+                  className="text-7xl md:text-9xl lg:text-[12rem] font-black tracking-tighter uppercase leading-none drop-shadow-2xl text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-400 md:to-neutral-800"
                 >
                   Ayush <br /> Sinha
                 </motion.h1>

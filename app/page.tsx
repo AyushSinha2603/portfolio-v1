@@ -61,6 +61,12 @@ import {
   SiTailwindcss,
   SiGreensock,
   SiFramer,
+  SiMongodb,
+  SiRedis,
+  SiApachekafka,
+  SiDocker,
+  SiPrometheus,
+  SiGrafana,
 } from "react-icons/si";
 import { FaDatabase, FaNetworkWired, FaJava } from "react-icons/fa";
 import { TbLayoutAlignTop, TbBrandCSharp } from "react-icons/tb";
@@ -260,7 +266,7 @@ export default function Home() {
                 </div>
 
                 {/* Tech Stack (Glassmorphism Cards) */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
                   {/* Languages */}
                   <motion.div
                     variants={fadeUp}
@@ -278,28 +284,10 @@ export default function Home() {
                     <div className="flex flex-wrap gap-3 relative z-10 w-full">
                       {[
                         { name: "Java", icon: <FaJava className="w-4 h-4" /> },
-                        {
-                          name: "TypeScript",
-                          icon: <SiTypescript className="w-4 h-4" />,
-                        },
-                        {
-                          name: "JavaScript",
-                          icon: <SiJavascript className="w-4 h-4" />,
-                        },
-                        {
-                          name: "Python",
-                          icon: <SiPython className="w-4 h-4" />,
-                        },
-                        { name: "C#" },
-                        {
-                          name: "SQL",
-                          icon: <FaDatabase className="w-4 h-4" />,
-                        },
-                        {
-                          name: "HTML5",
-                          icon: <SiHtml5 className="w-4 h-4" />,
-                        },
-                        { name: "CSS3", icon: <SiCss className="w-4 h-4" /> },
+                        { name: "JavaScript", icon: <SiJavascript className="w-4 h-4" /> },
+                        { name: "TypeScript", icon: <SiTypescript className="w-4 h-4" /> },
+                        { name: "Python", icon: <SiPython className="w-4 h-4" /> },
+                        { name: "SQL", icon: <FaDatabase className="w-4 h-4" /> },
                       ].map((t) => (
                         <div
                           key={t.name}
@@ -316,7 +304,7 @@ export default function Home() {
                     </div>
                   </motion.div>
 
-                  {/* Backend & Infrastructure */}
+                  {/* Backend & Systems */}
                   <motion.div
                     variants={fadeUp}
                     className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] aspect-square"
@@ -327,36 +315,15 @@ export default function Home() {
                         <Server className="w-6 h-6 text-white" />
                       </div>
                       <h3 className="text-xl lg:text-2xl font-black uppercase tracking-widest text-white">
-                        Backend & Infra
+                        Backend & Systems
                       </h3>
                     </div>
                     <div className="flex flex-wrap gap-3 relative z-10 w-full">
                       {[
-                        {
-                          name: "Spring Boot",
-                          icon: <SiSpringboot className="w-4 h-4" />,
-                        },
-                        {
-                          name: "Node.js",
-                          icon: <SiNodedotjs className="w-4 h-4" />,
-                        },
-                        {
-                          name: "PostgreSQL",
-                          icon: <SiPostgresql className="w-4 h-4" />,
-                        },
-                        {
-                          name: "REST APIs",
-                          icon: <FaNetworkWired className="w-4 h-4" />,
-                        },
-                        { name: "Git", icon: <SiGit className="w-4 h-4" /> },
-                        {
-                          name: "Postman",
-                          icon: <SiPostman className="w-4 h-4" />,
-                        },
-                        {
-                          name: "Vercel",
-                          icon: <SiVercel className="w-4 h-4" />,
-                        },
+                        { name: "Spring Boot", icon: <SiSpringboot className="w-4 h-4" /> },
+                        { name: "Node.js", icon: <SiNodedotjs className="w-4 h-4" /> },
+                        { name: "REST APIs", icon: <FaNetworkWired className="w-4 h-4" /> },
+                        { name: "System Design" },
                       ].map((t) => (
                         <div
                           key={t.name}
@@ -373,7 +340,43 @@ export default function Home() {
                     </div>
                   </motion.div>
 
-                  {/* Frontend & UI */}
+                  {/* Data & Streaming */}
+                  <motion.div
+                    variants={fadeUp}
+                    className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] aspect-square"
+                  >
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
+                    <div className="flex items-center gap-4 mb-8 relative z-10">
+                      <div className="p-3 bg-white/10 rounded-2xl group-hover:bg-white/20 transition-colors shadow-lg">
+                        <Database className="w-6 h-6 text-white" />
+                      </div>
+                      <h3 className="text-xl lg:text-2xl font-black uppercase tracking-widest text-white">
+                        Data & Streaming
+                      </h3>
+                    </div>
+                    <div className="flex flex-wrap gap-3 relative z-10 w-full">
+                      {[
+                        { name: "PostgreSQL", icon: <SiPostgresql className="w-4 h-4" /> },
+                        { name: "MongoDB", icon: <SiMongodb className="w-4 h-4" /> },
+                        { name: "Redis", icon: <SiRedis className="w-4 h-4" /> },
+                        { name: "Apache Kafka", icon: <SiApachekafka className="w-4 h-4" /> },
+                      ].map((t) => (
+                        <div
+                          key={t.name}
+                          className="flex items-center gap-2 px-4 py-3 bg-white/5 rounded-2xl text-xs font-bold tracking-widest border border-white/10 uppercase text-neutral-400 hover:border-white/50 hover:text-white hover:bg-white/10 hover:-translate-y-1 hover:shadow-[0_10px_20px_-10px_rgba(255,255,255,0.4)] hover:scale-105 transition-all duration-300 cursor-default group/skill"
+                        >
+                          {t.icon && (
+                            <span className="text-white/50 group-hover/skill:text-white transition-colors duration-300">
+                              {t.icon}
+                            </span>
+                          )}
+                          <span>{t.name}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </motion.div>
+
+                  {/* Frontend */}
                   <motion.div
                     variants={fadeUp}
                     className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] aspect-square"
@@ -383,37 +386,52 @@ export default function Home() {
                       <div className="p-3 bg-white/10 rounded-2xl group-hover:bg-white/20 transition-colors shadow-lg">
                         <Monitor className="w-6 h-6 text-white" />
                       </div>
-                      <h3 className="text-xl lg:text-2xl font-black uppercase tracking-widest text-white">
-                        Frontend & UI
+                      <h3 className="text-2xl font-black uppercase tracking-widest text-white">
+                        Frontend
                       </h3>
                     </div>
                     <div className="flex flex-wrap gap-3 relative z-10 w-full">
                       {[
-                        {
-                          name: "React",
-                          icon: <SiReact className="w-4 h-4" />,
-                        },
-                        {
-                          name: "Next.js",
-                          icon: <SiNextdotjs className="w-4 h-4" />,
-                        },
-                        { name: "Vite", icon: <SiVite className="w-4 h-4" /> },
-                        {
-                          name: "Tailwind CSS",
-                          icon: <SiTailwindcss className="w-4 h-4" />,
-                        },
-                        {
-                          name: "GSAP",
-                          icon: <SiGreensock className="w-4 h-4" />,
-                        },
-                        {
-                          name: "Framer Motion",
-                          icon: <SiFramer className="w-4 h-4" />,
-                        },
-                        {
-                          name: "Lenis",
-                          icon: <TbLayoutAlignTop className="w-4 h-4" />,
-                        },
+                        { name: "React", icon: <SiReact className="w-4 h-4" /> },
+                        { name: "Next.js", icon: <SiNextdotjs className="w-4 h-4" /> },
+                        { name: "Tailwind CSS", icon: <SiTailwindcss className="w-4 h-4" /> },
+                      ].map((t) => (
+                        <div
+                          key={t.name}
+                          className="flex items-center gap-2 px-4 py-3 bg-white/5 rounded-2xl text-xs font-bold tracking-widest border border-white/10 uppercase text-neutral-400 hover:border-white/50 hover:text-white hover:bg-white/10 hover:-translate-y-1 hover:shadow-[0_10px_20px_-10px_rgba(255,255,255,0.4)] hover:scale-105 transition-all duration-300 cursor-default group/skill"
+                        >
+                          {t.icon && (
+                            <span className="text-white/50 group-hover/skill:text-white transition-colors duration-300">
+                              {t.icon}
+                            </span>
+                          )}
+                          <span>{t.name}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </motion.div>
+
+                  {/* DevOps & Tools */}
+                  <motion.div
+                    variants={fadeUp}
+                    className="p-8 lg:p-10 rounded-[3rem] border border-white/5 bg-black/60 backdrop-blur-3xl hover:border-white/30 transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_0_80px_rgba(255,255,255,0.4)] z-10 hover:z-50 group flex flex-col relative overflow-hidden shadow-[0_0_40px_rgba(0,0,0,1)] aspect-square"
+                  >
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150"></div>
+                    <div className="flex items-center gap-4 mb-8 relative z-10">
+                      <div className="p-3 bg-white/10 rounded-2xl group-hover:bg-white/20 transition-colors shadow-lg">
+                        <Terminal className="w-6 h-6 text-white" />
+                      </div>
+                      <h3 className="text-xl lg:text-2xl font-black uppercase tracking-widest text-white">
+                        DevOps & Tools
+                      </h3>
+                    </div>
+                    <div className="flex flex-wrap gap-3 relative z-10 w-full">
+                      {[
+                        { name: "Docker", icon: <SiDocker className="w-4 h-4" /> },
+                        { name: "Git", icon: <SiGit className="w-4 h-4" /> },
+                        { name: "Prometheus", icon: <SiPrometheus className="w-4 h-4" /> },
+                        { name: "Grafana", icon: <SiGrafana className="w-4 h-4" /> },
+                        { name: "Postman", icon: <SiPostman className="w-4 h-4" /> },
                       ].map((t) => (
                         <div
                           key={t.name}

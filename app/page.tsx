@@ -980,8 +980,8 @@ export default function Home() {
                   </h3>
                   <div className="flex gap-4">
                     <a
-                      href="/resume/123CE0125_AyushSinha.pdf"
-                      download="AyushSinha_Resume.pdf"
+                      href="/resume/AyushSinha_CV.pdf"
+                      download="AyushSinha_CV.pdf"
                       className="p-2 bg-white/5 hover:bg-white/20 rounded-full transition-colors text-white hover:text-neutral-400 cursor-pointer outline-none flex items-center justify-center"
                     >
                       <Download className="w-5 h-5" />
@@ -996,7 +996,7 @@ export default function Home() {
                 </div>
                 <div className="flex-grow w-full rounded-xl overflow-hidden border border-white/10 bg-white/5 relative">
                   <iframe
-                    src="/resume/123CE0125_AyushSinha.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+                    src="/resume/AyushSinha_CV.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
                     className="absolute inset-0 w-full h-full border-none"
                     title="Resume PDF"
                   />

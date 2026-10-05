@@ -67,6 +67,8 @@ import {
   SiDocker,
   SiPrometheus,
   SiGrafana,
+  SiGooglegemini,
+  SiGooglechrome,
 } from "react-icons/si";
 import { FaDatabase, FaNetworkWired, FaJava } from "react-icons/fa";
 import { TbLayoutAlignTop, TbBrandCSharp } from "react-icons/tb";
@@ -323,6 +325,7 @@ export default function Home() {
                         { name: "Spring Boot", icon: <SiSpringboot className="w-4 h-4" /> },
                         { name: "Node.js", icon: <SiNodedotjs className="w-4 h-4" /> },
                         { name: "REST APIs", icon: <FaNetworkWired className="w-4 h-4" /> },
+                        { name: "Gemini API", icon: <SiGooglegemini className="w-4 h-4" /> },
                         { name: "System Design" },
                       ].map((t) => (
                         <div
@@ -395,6 +398,7 @@ export default function Home() {
                         { name: "React", icon: <SiReact className="w-4 h-4" /> },
                         { name: "Next.js", icon: <SiNextdotjs className="w-4 h-4" /> },
                         { name: "Tailwind CSS", icon: <SiTailwindcss className="w-4 h-4" /> },
+                        { name: "Chrome APIs", icon: <SiGooglechrome className="w-4 h-4" /> },
                       ].map((t) => (
                         <div
                           key={t.name}

@@ -541,17 +541,15 @@ export default function Home() {
                           MailSense AI
                         </h3>
                         <p className="text-neutral-400 text-sm leading-relaxed font-light mb-6">
-                          A sophisticated Spring Boot architecture utilizing
-                          advanced AI models to categorize, summarize, and
-                          auto-reply to complex email threads.
+                          Chrome extension and Spring Boot backend leveraging Gemini AI and RAG to draft context-aware email replies that match your personal writing style, backed by robust error handling.
                         </p>
                         <div className="flex flex-wrap gap-2 mb-8">
                           {[
-                            "Java",
+                            "Java 21",
                             "Spring Boot",
-                            "Spring AI",
-                            "Next.js",
-                            "Gemini",
+                            "React",
+                            "Chrome APIs",
+                            "Gemini API",
                           ].map((tag) => (
                             <span
                               key={tag}
